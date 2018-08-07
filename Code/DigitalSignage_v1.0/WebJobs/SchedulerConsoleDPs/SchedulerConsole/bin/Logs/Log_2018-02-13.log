@@ -1,9 +1,0 @@
-[Log Starts]
-2018-02-13 20:15:19,994 [WIPRO\RE246339] - Microsoft.Azure.Devices.Common.Exceptions.DeviceNotFoundException: AMQP5555
-Tracking Id:af8697b4129b4994ab5f19a4c38ce764-G:0-TimeStamp:02/13/2018 14:45:19
-   at Microsoft.Azure.Devices.AmqpServiceClient.<SendAsync>d__28.MoveNext()
---- End of stack trace from previous location where exception was thrown ---
-   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
-   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
-   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
-   at SchedulerConsole.SendCloudToDevice.<SendCloudToDeviceMessageAsync>d__3.MoveNext() in F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\SendCloudToDevice.cs:line 50
