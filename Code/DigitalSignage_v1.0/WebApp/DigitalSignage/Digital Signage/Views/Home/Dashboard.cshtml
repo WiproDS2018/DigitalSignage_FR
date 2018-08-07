@@ -1,0 +1,61 @@
+﻿<div class="container-fluid ms_root" ng-controller="dashBoardController">
+    <p class="backArrow1">&laquo; <a href="javascript:void(0)" ng-click="goToAdmin()">Back</a></p>
+    <div class="clearfix"></div>
+    @* Leftside Buttons *@
+    <div class="col-md-3 col-sm-4 col-xs-12 col-lg-2">
+        <div class="lftmenu_mas">
+            <div class="col-xs-3 lftbox">
+                <span class="reportIcon"><img src="~/Images/dashboard.svg" /></span>
+            </div>
+            <!--<span class="col-xs-3 lftbox"><img src="~/Images/dashboard.svg" /></span> -->
+            <div class="col-xs-8 col-sm-10 subMenuMobi" id="MainMenu">
+                <div class="list-group panel">
+
+                    <a href="#" class="list-group-item list-group-item-success" ng-click="reloadPage()">Reload  &raquo;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Rightside Content Started *@
+    <div class="col-md-9 col-sm-8 col-xs-12 col-lg-10 rgtSide1">
+        <h1>DashBoard <span class="sub_title" ng-cloak>{{subTitle}}</span></h1>
+        <p class="cont1">
+            Representing graphs based on the Content details and Playlist details.
+        </p><br />
+        <div style="padding:0px 0 20px 0; ">
+
+            <div class="col-md-3 col-sm-6 col-xs-12 col-lg-4" style="height: 370px; padding: 0; margin-left: 30px; margin-bottom:60px  ">
+                <div style="position:absolute; background:#fff; bottom:-35px; width:13%; left:0.65%; height:6%; z-index:999;"></div>
+                <div id="chartContainer" style="height:110%; width:101%; order:#a5a5a5 1px solid;-webkit-box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.75);
+box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.75);"></div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 col-lg-4" style="height: 370px; padding: 0; margin-left: 30px; margin-bottom:60px  ">
+                <div style="position:absolute; background:#fff; bottom:-35px; width:20%; left:0.65%; height:6%; z-index:999;"></div>
+                <div id="chartContainer1" style="height:110%; width:101%;  order:#a5a5a5 1px solid;-webkit-box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.75);
+box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.75);"></div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 col-lg-4" style="height: 370px; padding: 0; margin-left: 30px; margin-bottom:60px ">
+                <div style="position:absolute; background:#fff; bottom:-35px; width:20%; left:0.65%; height:6%; z-index:999;"></div>
+                <div id="chartContainer2" style="height:110%; width:101%; rder:#a5a5a5 1px solid;-webkit-box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.75);
+box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.75);"></div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 col-lg-4" style="height: 370px; padding: 0; margin-left: 30px; margin-bottom:60px ">
+                <div style="position:absolute; background:#fff; bottom:-35px; width:20%; left:0.65%; height:6%; z-index:999;"></div>
+                <div id="chartContainer3" style="height:110%; width:101%;  order:#a5a5a5 1px solid;-webkit-box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.75);
+box-shadow: 1px 2px 12px -2px rgba(0,0,0,0.75);"></div>
+            </div>
+
+
+
+                <script src="~/Scripts/lib/canvasjs.min.js"></script>
+            </div>
+    </div>
+</div>

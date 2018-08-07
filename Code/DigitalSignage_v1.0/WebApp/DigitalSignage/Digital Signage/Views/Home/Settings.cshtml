@@ -1,0 +1,226 @@
+﻿
+<div class="container-fluid ms_root" ng-controller="settingController">
+    <div class="clearfix"></div>
+
+    @* Leftside Buttons *@
+    <div class="col-md-3 col-sm-4 col-xs-12 col-lg-2">
+        <div class="lftmenu_mas">
+            <span class="col-xs-3 lftbox"><img src="~/Images/Settings.svg" /></span>
+            <div class="col-xs-8 col-sm-10 subMenuMobi" id="MainMenu">
+                <div class="list-group panel">
+                    <a href="#" class="list-group-item list-group-item-success activeCls" ng-click="addNewUser()"> Add new user </a>
+                    <a href="#" class="list-group-item list-group-item-success activeCls" ng-click="user()"> User Roles </a>
+                    
+                    @*<a href="#" class="list-group-item list-group-item-success" ng-click="admin()">Approvals  &raquo;</a>*@
+                    <a href="#submenuItemSubReport" class="list-group-item list-group-item-success activeCls" data-toggle="collapse" ng-click="reportChange()"data-parent="#submenuItemSub">Reports  &raquo;</a>
+                    <div class="collapse formobi" style="font-size:14px" id="submenuItemSubReport">
+                        <a href="#" class="list-group-item list-group-item-success activeCls" ng-click="reportPage()">Report</a>
+                        <a href="#" class="list-group-item list-group-item-success activeCls" ng-click="dashboardPage()">Dashboard </a>
+                    </div>
+                  @*  <a href="#" class="list-group-item list-group-item-success activeCls" data-toggle="modal" data-target="#resetPassModal">Reset Password</a>*@
+                    <a href="#" class="list-group-item list-group-item-success activeCls" ng-click="reloadPage()">Reload</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    @*<!-- Modal -->
+    <div class="modal fade" id="resetPassModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><b>Reset Password</b></h4>
+                </div>
+                <div class="modal-body">
+                    <span class="alert" ng-class="showErrMsg == 'Success'?'alrtTxtSuccess':'failMsg'" id="success" ng-bind="errMsg"></span>
+                    <div class="form-group">
+                        <div class="">
+                            <label>User Name</label>
+                            <input type="text" class="form-control" ng-model="userReset.UserName" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="">
+                            <label>Email ID</label>
+                            <input type="text" class="form-control" ng-model="userReset.Email" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="">
+                            <button type="submit" class="btn btn-info" ng-disabled="((userReset.UserName == undefined || userReset.UserName== null) && (userReset.Email == undefined || userReset.Email== null))" ng-click="resetPassword(userReset)">Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </div>*@
+    @* Rightside Content Started *@
+    <div class="col-md-9 col-sm-8 col-xs-12 col-lg-10 rgtSide1">
+        <h1>Admin <span class="sub_title" ng-cloak>{{subTitle}}</span></h1>
+        <p class="cont1">
+            User Roles allows to switch roles.New user can be enrolled by Add new user.
+        </p>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-9 rgtSide2 dtbl" ng-cloak>
+
+        <div class="rgttbl">
+            
+            @* User Role Code Starts here *@
+            <div ng-show="userTab" ng-init="getAllUsersData()">
+                <div class="rgt_serach_align1">
+                    <input class="form-control" ng-model="searchText" placeholder="Search by User Name" type="search" />
+                    <span ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="success" ng-bind="msg"></span>
+                </div>
+                @*<div class="alert" ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="success">
+                    <span ng-bind="msg"></span>
+                </div>*@
+                <div class="table-fixheader">
+                    <div>
+                        <table class="table mainTable  dtbl">
+
+                            <tbody>
+                                <tr class="headerRow">
+                                    <th style="width:10%; padding-left:10px !important">S.No</th>
+                                    <th style="width:25%;" ng-click="sortBy('UserName')">
+                                        User Name
+                                        <span class="sortorder" ng-show="propertyName === 'UserName'" ng-class="{reverse: reverse}"></span>
+                                    </th>
+                                    <th style="width:25%;" ng-click="sortBy('Role')">
+                                        Current Role
+                                        <span class="sortorder" ng-show="propertyName === 'Role'" ng-class="{reverse: reverse}"></span>
+                                    </th>
+                                    <th style="width:25%;">New Role</th>
+                                    <th style="width:10%;"></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="tableDivBody">
+                            <table class="table table-striped">
+
+                                <tbody lcass="tableBodySub">
+                                    <tr class="odd tableBodyRowSub" ng-show="userData.length == 0">
+                                        <td valign="top" colspan="5" class="dataTables_empty">No data available in table</td>
+                                    </tr>
+                                    <tr class="tableBodyRowSub" ng-repeat="user in userData | filter : {UserName : searchText } | orderBy:propertyName:reverse">
+                                        @*<tr ng-repeat="user in userData.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) | orderBy:propertyName:reverse">*@
+                                        <td style="width:10%; padding-left:10px !important" align="center">{{$index+1}}</td>
+                                        <td style="width:25%;" class="username"><span class="username">{{user.UserName}}</span></td>
+                                        <td style="width:25%;">{{user.Role}}</td>
+                                        <td style="width:25%;">
+                                            <select class="modalSelect" ng-model="userRole" ng-options="role as role.RoleName for role in user.RoleList">
+                                                <option selected value=""> --- Select an option ---</option>
+                                            </select>
+                                        </td>
+                                        <td style="width:10%;"><button type="button" class="btn btn-submit_tbl" ng-click="Save(user.UserId,userRole)">Submit</button>&nbsp;&nbsp;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                   
+                        
+                </div>
+            </div>
+            @* User Role Code ends here *@
+
+            @* Admin Code Starts here *@
+            <div ng-show="adminTab" ng-init="getAllAdminData()">
+                <div class="alert" ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="success">
+                    <span>{{adminMsg}}</span>
+                </div>
+                <div class="">
+                    <table class="table mainTable table-border dtbl">
+                        
+                        <tbody>
+                            <tr class="headerRow">
+                                <th style="width:10%; padding-left:10px !important">S.No</th>
+                                <th style="width:20%" ng-click="sortBy('SceneName')">
+                                    Scenes Name
+                                    <span class="sortorder" ng-show="propertyName === 'SceneName'" ng-class="{reverse: reverse}"></span>
+                                </th>
+                                <th style="width:20%" ng-click="sortBy('ApproverName')">
+                                    Manager
+                                    <span class="sortorder" ng-show="propertyName === 'ApproverName'" ng-class="{reverse: reverse}"></span>
+                                </th>
+                                <th style="width:20%" ng-click="sortBy('Status')">
+                                    Status
+                                    <span class="sortorder" ng-show="propertyName === 'Status'" ng-class="{reverse: reverse}"></span>
+                                </th>
+                                <th style="width:20%" >Preview</th>
+                                <th style="width:10%" >Approve</th>
+                            </tr>
+                        </tbody>
+                        </table>
+                    <div class="tableDivBody">
+                        <table class=" table  table-striped">
+                           
+                            <tbody class="tableBodySub">
+                                <tr class="odd tableBodyRowSub" ng-show="pendApproval.length == 0">
+                                    <td valign="top" colspan="6" class="dataTables_empty">No data available in table</td>
+                                </tr>
+                                <tr class="tableBodyRowSub" ng-repeat="pData in pendApproval | orderBy:propertyName:reverse">
+                                    <td style="width:10%" align="center">{{$index+1}}</td>
+                                    <td style="width:20%"  class="username"><span class="username">{{pData.SceneName}}</span></td>
+                                    <td style="width:20%" >{{pData.ApproverName}}</td>
+                                    <td style="width:20%" >{{pData.Status}}</td>
+                                    <td style="width:20%" >
+                                        <span id="{{pData.SceneId}}" ng-click="templateFunction(pData.SceneUrl,pData.SceneType,pData.IconPosition)">
+                                            <a class="edit_btn_align"><img src="~/Images/eye.png" class="previewIcon" border="0" alt="Preview" /></a>
+                                        </span>
+                                    </td>
+                                    <td style="width:10%" >
+                                        <button type="button" class="btn btn-tbl_cancel1" ng-click="rejectFun(pData.SceneId,pData.SceneName,pData.ApproverName,pData.Status)"> Reject</button> <button type="button" class="btn btn-tbl_approv1" ng-click="approveFun(pData.SceneId,pData.SceneName,pData.ApproverName,pData.Status)"> Approve</button>&nbsp;&nbsp;
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                        
+                </div>
+                
+                
+            </div>
+            <div class="RegisterBoxTable" id="createForm" ng-show="addNewUserDiv">
+                <span ng-bind="errorMsg" style="color:red" ng-show="errorMsgSpan"></span><span ng-show="successMsgSpan"ng-bind="successMsg" style="color:cornflowerblue"></span>
+                @*<div class="login-logo">
+                <span class="login_logo"><img src="~/Images/logo.png" width="99" border="0" title="MicroSoft-DS" /></span>
+            </div>*@
+
+
+                @*@using (Html.BeginForm("SaveUser", "User"))*@
+                    @*<div class="form-group ">
+                    <input type="text" name="firstName" class="form-control login" placeholder="First Name">
+                </div>*@
+                    <div class="form-group ">
+                        <input type="text" ng-model="newuserObj.username" class="form-control login" placeholder="User Name">
+                    </div>
+                        <div class="form-group ">
+                            <input type="email" ng-model="newuserObj.email" class="form-control login" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" ng-model="newuserObj.Password" class="form-control" placeholder="New Password ">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" ng-model="newuserObj.confirmPassword" class="form-control" placeholder="Confirm Password ">
+                        </div>
+                        <div class="form-actions">
+                            <button class="btn btn-login" type="submit" ng-click="submitNewUser(newuserObj)"> Submit </button>
+                        </div>
+
+            </div>
+
+            @* Admin code ends here *@
+        </div>
+    </div>
+    @* modal directive started*@
+    <modal-comp title="Property Details" visible="showcompModal" ng-cloak></modal-comp>
+    @* modal *@
+</div>
+

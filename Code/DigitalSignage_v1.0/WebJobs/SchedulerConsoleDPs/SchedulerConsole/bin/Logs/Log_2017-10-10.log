@@ -1,0 +1,17 @@
+[Log Starts]
+2017-10-10 22:52:06,551 [WIPRO\RE246339] - Microsoft.Azure.Devices.Common.Exceptions.DeviceNotFoundException: new1
+Tracking Id:e90c1a6965a740098350164f00a026c9-G:4-TimeStamp:10/10/2017 17:22:04
+   at Microsoft.Azure.Devices.AmqpServiceClient.<SendAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at SchedulerConsole.SendCloudToDevice.<SendCloudToDeviceMessageAsync>d__0.MoveNext() in f:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\SendCloudToDevice.cs:line 49
+2017-10-10 22:52:06,551 [WIPRO\RE246339] - Microsoft.Azure.Devices.Common.Exceptions.DeviceNotFoundException: new1
+Tracking Id:4c3764e9ab9f406785f930b1aa78c187-G:4-TimeStamp:10/10/2017 17:22:04
+   at Microsoft.Azure.Devices.AmqpServiceClient.<SendAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at SchedulerConsole.SendCloudToDevice.<SendCloudToDeviceMessageAsync>d__0.MoveNext() in f:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\SendCloudToDevice.cs:line 49

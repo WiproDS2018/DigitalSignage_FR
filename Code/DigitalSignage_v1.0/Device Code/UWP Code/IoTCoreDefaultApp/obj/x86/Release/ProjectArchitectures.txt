@@ -1,0 +1,1 @@
+D:\Windows10493\IoTCoreDefaultApp\CS\IoTCoreDefaultApp\IoTCoreDefaultApp.csproj;x86

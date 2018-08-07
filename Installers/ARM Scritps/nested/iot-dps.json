@@ -1,0 +1,51 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "iotDpsSettings": {
+            "type": "object"
+        },
+        "apiVersions": {
+            "type": "object"
+        },
+        "iotHubSettings": {
+            "type": "object"
+        },
+        "iotHubPrimaryKey": {
+            "type": "string"
+        }
+    },
+    "resources": [
+        {
+            "apiVersion": "[parameters('apiVersions').iotDpsApiversion]",
+            "type": "Microsoft.Devices/ProvisioningServices",
+            "name": "[parameters('iotDpsSettings').iotDpsName]",
+            "location": "[parameters('iotDpsSettings').location]",
+            "sku": {
+                "name": "S1",
+                "tier": "Standard",
+                "capacity": 1
+            },
+            "properties": {
+                "iotHubs": [
+                    {
+                        "applyAllocationPolicy": true,
+                        "allocationWeight": "1",
+                        "connectionString": "[concat('HostName=',parameters('iotHubSettings').iotHubName,'.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=',parameters('iotHubPrimaryKey'))]",
+                        "location": "[parameters('iotHubSettings').location]"
+                    }
+                ]
+            }
+        }
+    ],
+    "outputs": {
+        "iotDpsIdScope": {
+            "value": "[reference(resourceId('Microsoft.Devices/ProvisioningServices',parameters('iotDpsSettings').iotDpsName)).idScope]",
+            "type": "string"
+        },
+        "iotDpsPrimaryKey": {
+            "value": "[listkeys(resourceId('Microsoft.Devices/ProvisioningServices/keys',parameters('iotDpsSettings').iotDpsName,'provisioningserviceowner'),'2017-08-21-preview').primaryKey]",
+            "type": "string"
+        }
+    }
+}

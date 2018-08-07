@@ -1,0 +1,455 @@
+﻿ 
+<div class="container-fluid ms_root" ng-controller="StationController">
+    <div class="clearfix"></div>
+
+    @* Left Side Content *@
+    <div class="col-md-3 col-sm-4 col-xs-12 col-lg-2 zindx">
+        <div class="lftmenu_mas">
+            <span class="col-xs-3 lftbox"><img src="~/Images/Stations.svg" /></span>
+            <div class="col-xs-8 col-sm-10 subMenuMobi" id="MainMenu">
+                <div class="list-group panel">
+                    <a href="#submenuItemDefine" class="list-group-item list-group-item-success" ng-class="ActiveDefineGrouping" data-toggle="collapse" data-parent="#MainMenu" ng-click="clearMsg()">Define Grouping  &raquo;</a>
+                           <div class="collapse formobi" style="font-size:16px" id="submenuItemDefine">
+                               <a href="" class="list-group-item" ng-click="aNewStation()" ng-class="ActiveCreateParentGroupSub" >Create Parent Group</a>
+                               <a href="#" class="list-group-item list-group-item-success" ng-click="newGroup()" ng-class="ActiveCreateSubGroupSub" >Create Sub Group</a>
+                               <a href="#viewParentMenu" style="font-size:16px"class="list-group-item list-group-item-success" ng-class="ActiveViewParentGroup" data-toggle="collapse" ng-click="getParentGroup()"data-parent="#MainMenu1">View Parent group &raquo;</a>
+                               <div class="collapse formobi" style="font-size:12px" id="viewParentMenu" ng-hide="hideParentGroup">
+                                   <a href="" class="list-group-item" ng-click="assignPlayer()" ng-class="ActiveViewParentGroupSubAttach">
+                                       Attach Devices/Sub Group  to parent group&raquo;
+                                       <div ng-show="chckBoxMsgassign" ng-cloak>
+                                           <span ng-class={{"!chckBox1?'':'halert1'"}} class="alrtTxtWarning"> {{assignMsg}}</span>
+                                       </div>
+                                   </a>
+                                   <a href="#" class="list-group-item list-group-item-success" ng-show="adminUserOnly" ng-click="rmData()" ng-class="ActiveViewParentGroupSubRemove">
+                                       Remove Parent Group  &raquo;
+                                       <div ng-show="chckBoxMsg" ng-cloak>
+                                           <span ng-class={{"chckBox?'halert':''"}} class="alrtTxtWarning"> Select one Device Group !</span>
+                                       </div>
+                                   </a>
+                               </div>
+                               <a href="#viewSubMenu" style="font-size:16px"class="list-group-item list-group-item-success" data-toggle="collapse"  ng-click="getSubGroup()" ng-class="ActiveViewSubGroup"data-parent="#MainMenu1">View Sub group &raquo;</a>
+                               <div class="collapse formobi" style="font-size:12px" id="viewSubMenu" ng-hide="hideSubGroup" >
+                                  <a href="#" class="list-group-item list-group-item-success" ng-click="assignPlayerPlrGr()" ng-class="ActiveViewSubGroupAttach">
+                                     Assign Devices to sub group
+                                     <div ng-show="chckBoxforAssignPlayerPlrGr" ng-cloak>
+                                          <span ng-class={{"!chckBox?'':'halert'"}} class="alrtTxtWarning">{{assignMsgPlrGr}}</span>
+                                     </div>
+                                   </a>
+                                   <a href="#" class="list-group-item list-group-item-success"  ng-show="adminUserOnly" ng-click="rmGroupData()" ng-class="ActiveViewSubGroupRemove">
+                                       Remove Sub Group
+                                       <div ng-show="chckBoxMsgForGrpPlrGr" ng-cloak>
+                                           <span ng-class={{"!chckBox?'':'halert'"}} class="alrtTxtWarning"> Select the Group to Delete !</span>
+                                       </div>
+                                   </a>
+                               </div>
+                               
+                           </div>
+                    <input type="hidden" value="@Session["UserRole"]" id="myUserRole" />
+                    <a href="#" class="list-group-item list-group-item-success" ng-click="reloadPage()">Reload</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Rightside Content Started *@
+    <div class="col-md-9 col-sm-8 col-xs-12 col-lg-10 rgtSide1 zindx" ng-cloak>
+        <h1>Device Group <span class="sub_title" ng-cloak>{{subTitle}}</span></h1>
+        <p class="cont1">
+            Device Group is grouping of devices. It can be categorized in two levels i.e. Parent Group & Sub Group. 
+    </div>
+    
+    @* Add Station Started *@
+    <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 rgtSide2 upload" ng-show="aNStation" ng-cloak>  
+       
+            <span class="alert" ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="success" ng-bind="msg"></span>
+       
+        <form role="form" class="ng-pristine ng-valid" id="stationFormData">
+            <div class="form-group ">
+                <fieldset>
+                    <label for="StationName">Parent Group Name</label><span style="color:red;font-size:20px">&nbsp; *</span>
+                    <input class="form-control" type="text" maxlength="50" name="StationName" ng-model="Station.DisplayStationName"/>                    
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <label for="LocationDetails">Parent Group Details</label>
+                    <input class="form-control" type="text" maxlength="50" name="StationLocation" ng-model="Station.DisplayStationLocation" autocomplete="off" />                    
+                 </fieldset>
+            </div>             
+            <div class="form-group flt_rgt">
+                <button type="button" class="btn btn-submit1" ng-click="addStationData()">Save</button>
+                <button type="button" class="btn btn-submit1" ng-click="cancelAdd()">Cancel</button>
+            </div>
+        </form>
+        @* Add Station alert Message *@
+        
+    </div>
+    @* Add station ended *@
+
+    @* Assign station started *@
+    <div class="col-md-9 col-sm-8 col-xs-12 col-lg-10 rgtSide1" ng-show="assnStation" ng-cloak>
+
+       
+        
+            <span class="alert" ng-class="res.data == 'sucess'?'alrtTxtSuccess':'failMsg'" id="editsuccess">{{editMsg}}</span>
+       
+        <div id="fluid">
+            
+            @* DD Test Starts here *@
+            <div class="simpleDemo row">
+                
+                <div class="col-md-10">
+                    <div class="row">
+                        <p style="font-size:16px;color:cornflowerblue">Sub Groups with associated devices & Stand-alone devices can be selected.</p>
+                        <div ng-repeat="(listName, list) in stationModel.lists" class="col-md-6">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">{{listName}} List &nbsp; for <span class="ddClass">{{stnName}}</span> </h3>
+                                </div>
+                                <ul class="dndList" dnd-list="list">
+                                    <li class="targetArea" ng-repeat="item in list" dnd-draggable="item" dnd-moved="list.splice($index, 1)" dnd-effect-allowed="move" dnd-selected="stationModel.selected = item" ng-class="{'selected': stationModel.selected === item}">
+                                        @*{{item.GroupName}}
+                                        <ul ng-show="list.Indicator = true" ng-repeat="childItem in item.Players">
+                                             <li>{{childItem.PlayerName}}</li>
+                                         </ul>*@
+                                          
+                                        <div class="accordion__container">
+                                            <div class="accordion__tab">
+                                                <div class="accordion__tab-title" ng-click="openTab(item)">{{item.GroupName}} <span class="item_arrw_align" ng-show="item.Indicator == true">&raquo;</span></div>
+                                                 
+                                                <ul class="accordion__tab-content" ng-show="item.opened" ng-repeat="childItem in item.Players">
+                                                    <li>{{childItem.PlayerName}}</li>
+                                                </ul>
+                                            </div>
+                                        </div>                                         
+                                    </li>
+                                    <p>&nbsp;</p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div view-source="simple"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12">
+            Note: Drag & drop to select items ...
+        </div>
+        <div class="col-lg-12 btnGlbAlign">
+            <button type="button" class="btn btn-submit1" ng-click="ddSave()">Save</button>
+            <button type="button" class="btn btn-submit1" ng-click="ddRestore()">Reset</button>
+            <button type="button" class="btn btn-submit1" ng-click="cancFun()">Cancel</button>
+        </div>       
+
+        
+    </div>
+            @* Assign station ended  *@
+
+    <div class="col-md-9 col-sm-8 col-xs-12 col-lg-10 rgtSide2" ng-show="AllGroupsTable" ng-cloak>
+        @* edit table code started here *@
+        <div class="rgttbl">
+            <div class="rgt_serach_align1">
+                <input class="form-control" ng-model="searchTextS" placeholder="Search by Group Name" type="search" />
+            </div>
+            @*<div class="alert" ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="editsuccess">
+                    <span ng-bind="editMsg"></span>
+                </div>*@
+            <div class="mgr_select"></div>
+            <div class="table-fixheader">
+                <div>
+                    <table class="table mainTable dtbl">
+                        <tbody>
+                            <tr class="headerRow">
+                                <th style="width:10%; padding-left:10px !important; float:left;">S.No</th>
+                                <th style="width:30%; padding-left:6px !important; float:left;" ng-click="sortBy('groupName')">
+                                    Group Name
+                                    <span class="sortorder" ng-show="propertyName === 'groupName'" ng-class="{reverse: reverse}"></span>
+                                </th>
+                                <th style="width:30%; float:left;" ng-click="sortBy('groupDetails')">
+                                    Group Details   
+                                    <span class="sortorder" ng-show="propertyName === 'groupDetails'" ng-class="{reverse: reverse}"></span>
+                                </th>
+                                <th style="width:30%; float:left;">Type</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="tableDivBody">
+                        <table class=" table table-striped">
+
+                            <tbody class="tableBodySub">
+                                <tr class="odd tableBodyRowSub" ng-show="allGroupData.length == 0">
+                                    <td valign="top" colspan="4" class="dataTables_empty">No data available in table</td>
+                                </tr>
+                                <tr class="tableBodyRowSub" ng-repeat="station in allGroupData | filter : {groupName : searchTextS }  | orderBy:propertyName:reverse">
+                                    <td style="width:10%; float:left;" class="tableSubTD">{{$index + 1}}</td>
+                                    <td style="width:30%; float:left;" class="tableSubTD"><span class="name_ellip" uib-tooltip="{{station.groupName}}">{{station.groupName}}</span></td>
+                                    <td style="width:30%; float:left;" class="tableSubTD"><span class="name_ellip" uib-tooltip="{{station.groupDetails}}">{{station.groupDetails}}</span></td>
+                                    <td style="width:30%; float:left;" class="tableSubTD">
+                                        {{station.type}}
+                                       </td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* edit table code ended here *@
+    </div>
+
+            @* Right side code started *@
+            <div class="col-md-9 col-sm-8 col-xs-12 col-lg-10 rgtSide2" ng-show="stationTable"ng-cloak>
+                @* edit table code started here *@
+                <div class="rgttbl">
+                    <div class="rgt_serach_align1">
+                        <input class="form-control" ng-model="searchText" placeholder="Search by Parent Group Name" type="search" />
+                        <span class="alert" ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="editsuccess"  ng-bind="editMsg"></span>
+                    </div>
+                    @*<div class="alert" ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="editsuccess">
+                        <span ng-bind="editMsg"></span>
+                    </div>*@  
+                    <div class="mgr_select"></div>
+                    <div class="table-fixheader">
+                        <div>
+                            <table class="table mainTable dtbl" >
+                                <tbody>
+                                    <tr class="headerRow">
+                                        <th style="width:5%; padding-left:10px !important;">S.No</th>
+                                        <th style="width:5%" ng-hide="hideCol">Select</th>
+                                        <th style="width:40%; padding-left:6px !important;" ng-click="sortBy('DisplayStationName')">
+                                            Parent Group Name
+                                            <span class="sortorder" ng-show="propertyName === 'DisplayStationName'" ng-class="{reverse: reverse}"></span>
+                                        </th>
+                                        <th style="width:40%" ng-click="sortBy('DisplayStationLocation')">
+                                            Parent Group Details
+                                            <span class="sortorder" ng-show="propertyName === 'DisplayStationLocation'" ng-class="{reverse: reverse}"></span>
+                                        </th>
+                                        <th style="width:10%">Edit</th>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            <div class="tableDivBody">
+                                <table class="table table-striped dtbl">
+                                     
+                                    <tbody class="tableBodySub">
+                                        <tr class="odd tableBodyRowSub" ng-show="model.stationTable.length == 0">
+                                            <td valign="top" colspan="4" class="dataTables_empty">No data available in table</td>
+                                        </tr>
+                                        <tr class="tableBodyRowSub" ng-repeat="station in model.stationTable | filter : {DisplayStationName : searchText }  | orderBy:propertyName:reverse" ng-include="getTemplate(station)">
+                                    </tbody>
+                                </table>
+                            </div>
+                                @*<tbody>
+                                    <tr class="odd" ng-show="model.stationTable.length == 0">
+                                        <td valign="top" colspan="4" class="dataTables_empty">No data available in table</td>
+                                    </tr>
+                                    <tr ng-repeat="station in model.stationTable | filter : {DisplayStationName : searchText }  | orderBy:propertyName:reverse" ng-include="getTemplate(station)">
+                                        @*<tr ng-repeat="station in model.stationTable.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) | orderBy:propertyName:reverse" ng-include="getTemplate(station)"></tr>*@
+                                @*</tbody>
+                            </table>*@
+                        </div>
+                        
+                        <script type="text/ng-template" id="display">
+                            <td style="width:5%" class="tableSubTD">{{$index + 1}}</td>
+                            <td style="width:5%" class="tableSubTD" ng-hide="hideCol"><input type="checkbox" id={{$index}} ng-click="vm.myClick(station.DisplayStationid, $index, station.DisplayStationName, station.DisplayStationLocation)" /></td>
+                            <td style="width:40%" class="tableSubTD"><span class="name_ellip2" uib-tooltip="{{station.DisplayStationName}}">{{station.DisplayStationName}}</span></td>
+                            <td style="width:40%" class="tableSubTD"><span class="name_ellip2" uib-tooltip="{{station.DisplayStationLocation}}">{{station.DisplayStationLocation}}</span></td>
+                            <td style="width:10%" class="tableSubTD">
+                                <span ng-click="editStation(station)"><a class="edit_btn_align"><img src="../../Images/edit.png" /></a></span>
+                                @*<span ng-click="copyStation(station)"><a class="edit_btn_align"><img src="../../Images/add.png" /></a></span>*@
+                            </td>
+                        </script>
+                        <script type="text/ng-template" id="edit">
+                            <td style="width:5%" class="tableSubTD">{{$index + 1}}</td>
+                            <td style="width:5%"class="tableSubTD"ng-hide="hideCol"><input type="checkbox" id={{$index}} ng-click="vm.myClick(model.selected.DisplayStationid, $index, model.selected.DisplayStationName, model.selected.DisplayStationLocation)" /></td>
+                            <td style="width:40%"class="tableSubTD"><input type="text" maxlength="50" ng-model="model.selected.DisplayStationName" /></td>
+                            <td style="width:40%"class="tableSubTD"><input type="text" maxlength="50" ng-model="model.selected.DisplayStationLocation" /></td>
+                            <td style="width:10%"class="tableSubTD">
+                                <a class="save_btn_align" ng-click="saveStation($index,model.selected.DisplayStationid,model.selected.DisplayStationName, model.selected.DisplayStationLocation)"><img src="../../Images/save_icon.png" /></a>
+                                <a class="cancel_btn_align " ng-click="reset()"><img src="../../Images/cancel_icon.png" /></a>
+                            </td>
+                        </script>
+                    </div>
+                </div>
+                              
+                @* edit table code ended here *@
+            </div>
+    @*Right side code ended  *@
+
+
+    @*   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ CODE OF PLAYER GROUP @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ *@
+
+    @*Creating New plAYER group by prodipta  *@
+    <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 rgtSide2 upload" ng-show="aNGroupPlrGr" ng-cloak>
+        @*<div class="alert" ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="success">*@
+            <span class="alert" ng-class="resPlrGr.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="success" ng-bind="msgPlrGr"></span>
+        @*</div>*@
+        <form role="form" class="ng-pristine ng-valid" id="playerFormData">
+            <div class="form-group">
+                <fieldset>
+                    <label for="GroupName">Sub Group Name</label><span style="color:red;font-size:20px">&nbsp; *</span>
+                    <input class="form-control" type="text" maxlength="50" ng-model="GroupPlrGr.groupName" id="GroupName" name="GroupName" />
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <label for="GroupDescription">Sub Group Description</label>
+                    <input class="form-control" type="text" maxlength="50" ng-model="GroupPlrGr.groupDescription" id="GroupDescription" name="GroupDescription" />
+                </fieldset>
+            </div>
+            <div class="form-group flt_rgt">
+                <button type="submit" class="btn btn-submit1 " ng-click="addGroup();">Save</button>
+                <button type="button" class="btn btn-submit1 " ng-click="cancFunPlrGr()">Cancel</button>
+            </div>
+        </form>
+        
+    </div>
+    @* ended by prodipta *@
+
+    @* Player Group view table start by prodipta *@
+    <div class="col-md-9 col-sm-8 col-xs-12 col-lg-10 rgtSide2" ng-init="getAllGroupPlayer()" ng-show="GroupTableVisibilityPlrGr" ng-cloak>
+        <div class="rgttbl plyr1">
+            <div class="rgt_serach_align1">
+                <input class="form-control" ng-model="searchText" placeholder="Search by Sub Group Name" type="search" />
+                <span class="alert" ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="editsuccess" ng-bind="editMsg"></span>
+            </div>
+            @*<div class="alert" ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="editsuccess">
+                <span>{{editMsg}}</span>
+            </div>*@
+            <div class="table-fixheader">
+                    <table class="table mainTable  dtbl">
+                        
+                        <tbody>
+                            <tr class="headerRow">
+                                <th style="width:5%; padding-left:10px !important;">S.No</th>
+                                <th style="width:5%">Select</th>
+                                <th  style="width:40%; padding-left:6px !important;" ng-click="sortBy('GroupName')">
+                                    Sub Group Name
+                                    <span class="sortorder" ng-show="propertyName === 'GroupName'" ng-class="{reverse: reverse}"></span>
+                                </th>
+                                <th style="width:40%"ng-click="sortBy('GroupDescription')">
+                                    Sub Group Description
+                                    <span class="sortorder" ng-show="propertyName === 'GroupDescription'" ng-class="{reverse: reverse}"></span>
+                                </th>
+                                <th style="width:10%" >Edit</th>
+                            </tr>
+                        </tbody>
+                        </table>
+                    <div class="tableDivBody">
+                        <table class="table table-striped">
+                          
+                        <tbody class="tableBodySub">
+                            <tr class="odd tableBodyRowSub" ng-show="modelPlrGr.PlayerGroupTable.length == 0">
+                                <td valign="top" colspan="4" class="dataTables_empty">No data available in table</td>
+                            </tr>
+                            <tr class="tableBodyRowSub" ng-repeat="PlayerGroup in modelPlrGr.PlayerGroupTable | filter : {GroupName : searchText } | orderBy:propertyName:reverse" ng-include="getTemplateForGroup(PlayerGroup)">
+                                @*<tr ng-repeat="PlayerGroup in modelPlrGr.PlayerGroupTable.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) | orderBy:propertyName:reverse" ng-include="getTemplateForGroup(PlayerGroup)">*@
+
+                                <td>{{$index+1}}</td>
+                                <td></td>
+                                <td> {{PlayerGroup.GroupName}}</td>
+                                <td>{{PlayerGroup.GroupDescription}}</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                        
+                
+                <script type="text/ng-template" id="displayGroup">
+                    <td style="width:5%" >{{$index + 1}}</td>
+                    <td style="width:5%" ><input type="checkbox" id={{PlayerGroup.GroupId}} ng-click="vmPGroupPlrGr.myClick($index, PlayerGroup.GroupId, PlayerGroup.GroupName, PlayerGroup.GroupDescription,PlayerGroup)" /></td>
+                    <td style="width:40%" class="username"><span class="name_ellip2" uib-tooltip="{{PlayerGroup.GroupName}}">{{PlayerGroup.GroupName}}</span></td>
+                    <td style="width:40%" ><span class="name_ellip2" uib-tooltip="{{PlayerGroup.GroupDescription}}">{{PlayerGroup.GroupDescription}}</span></td>
+                    <td style="width:10%" ng-click="editPlayerGroup(PlayerGroup)">
+                        <a class="edit_btn_align"><img src="../../Images/edit.png" /></a>
+                    </td>
+                </script>
+
+                <script type="text/ng-template" id="editGroup">
+                    <td style="width:5%">{{$index + 1}}</td>
+                    <td style="width:5%"><input type="checkbox" id={{$index}} ng-click="vmPGroupPlrGr.myClick(modelPlrGr.selected.GroupId,$index,  modelPlrGr.selected.GroupName, modelPlrGr.selected.GroupDescription)" /></tdstyle="width:15%">
+                    <td  style="width:40%"><input type="text" maxlength="50" ng-model="modelPlrGr.selected.GroupName" /></td>
+                    <td  style="width:40%"><input type="text" maxlength="50" ng-model="modelPlrGr.selected.GroupDescription" /></td>
+                    <td style="width:10%">
+                        <a class="save_btn_align" ng-click="saveplayerGroup($index, modelPlrGr.selected.GroupId, modelPlrGr.selected.GroupName, modelPlrGr.selected.GroupDescription)"><img src="../../Images/save_icon.png" /></a>
+                        <a class="cancel_btn_align" ng-click="resetPlrGr()"><img src="../../Images/cancel_icon.png" /></a>
+                    </td>
+                </script>
+                @* Edit player group End *@
+            </div>
+        </div>
+        
+    </div>
+    @* Assign Playergroup started *@
+    <div class="col-md-9 col-sm-8 col-xs-12 col-lg-10 rgtSide1" ng-show="assnStationPlrGr" ng-cloak>
+        <div class="alert" ng-class="res.data == 'sucess'?'alrtTxtSuccess':'failMsg'" id="editsuccess">
+            <span>{{editMsg}}</span>
+        </div>
+        <div id="fluid" class="dd_top_align">
+            <div ng-repeat="(listName, list) in modelsPlrGr.lists" class="col-sm-12 col-xs-12 col-md-4 mar_lft0">
+                <div class="panel panel-info dd">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{{listName}} List  &nbsp; for <span class="ddClass">{{grpName}}</span></h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul dnd-list="list">
+                            <li ng-repeat="item in list"
+                                dnd-draggable="item"
+                                dnd-moved="list.splice($index, 1)"
+                                dnd-effect-allowed="move"
+                                dnd-selected="models.selected = item"
+                                ng-class="{'selected': modelsPlrGr.selected === item}">
+
+                                <div class="accordion__container1">
+                                    <div class="accordion__tab">
+                                        <div class="accordion__tab-title" ng-click="openTab(item)">
+                                            {{item.PlayerName}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <p>&nbsp;</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12">
+            Note: Drag & drop to select items ...
+        </div>
+        <div class="col-lg-12 btnGlbAlign">
+            <button type="button" class="btn btn-submit1" ng-click="ddSavePlrGr()">Save</button>
+            <button type="button" class="btn btn-submit1" ng-click="ddRestorePlrGr()">Reset</button>
+            <button type="button" class="btn btn-submit1" ng-click="cancFun()">Cancel</button>
+        </div>
+       
+    </div>
+    @* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@END OF PLAYER GROUP @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*@
+
+
+        </div>
+    <script>
+        function allowDrop(ev) {
+           // console.log(ev);
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            console.log(ev)
+            ev.dataTransfer.setData("text", ev.target.id);
+            console.log(ev.target.id,'drageventid');
+        }
+
+        function drop(ev,el) {
+            console.log(ev)
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            console.log(data);
+            el.appendChild(document.getElementById(data));
+            console.log(el,'droppppppppppppppppppp');
+        }
+    </script>
+

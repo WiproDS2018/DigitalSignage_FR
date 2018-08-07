@@ -1,0 +1,462 @@
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\logo.ico
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\welcome.jpg
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\SignageFaceRecognition.exe.config
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\SignageFaceRecognition.exe
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\SignageFaceRecognition.pdb
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Win32.Primitives.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\netstandard.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.AppContext.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Collections.Concurrent.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Collections.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Collections.NonGeneric.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Collections.Specialized.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.ComponentModel.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.ComponentModel.EventBasedAsync.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.ComponentModel.Primitives.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.ComponentModel.TypeConverter.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Console.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Data.Common.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Diagnostics.Contracts.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Diagnostics.Debug.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Diagnostics.FileVersionInfo.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Diagnostics.Process.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Diagnostics.StackTrace.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Diagnostics.Tools.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Diagnostics.TraceSource.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Diagnostics.Tracing.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Drawing.Primitives.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Dynamic.Runtime.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Globalization.Calendars.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Globalization.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Globalization.Extensions.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.IO.Compression.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.IO.Compression.ZipFile.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.IO.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.IO.FileSystem.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.IO.FileSystem.DriveInfo.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.IO.FileSystem.Primitives.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.IO.FileSystem.Watcher.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.IO.IsolatedStorage.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.IO.MemoryMappedFiles.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.IO.Pipes.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.IO.UnmanagedMemoryStream.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Linq.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Linq.Expressions.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Linq.Parallel.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Linq.Queryable.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.Http.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.NameResolution.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.NetworkInformation.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.Ping.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.Primitives.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.Requests.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.Security.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.Sockets.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.WebHeaderCollection.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.WebSockets.Client.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.WebSockets.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.ObjectModel.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Reflection.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Reflection.Extensions.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Reflection.Primitives.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Resources.Reader.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Resources.ResourceManager.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Resources.Writer.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Runtime.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Runtime.Extensions.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Runtime.Handles.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Runtime.InteropServices.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Runtime.Numerics.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Runtime.Serialization.Formatters.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Runtime.Serialization.Json.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Runtime.Serialization.Primitives.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Runtime.Serialization.Xml.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Security.Claims.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Security.Cryptography.Algorithms.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Security.Cryptography.Csp.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Security.Cryptography.Encoding.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Security.Cryptography.Primitives.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Security.Cryptography.X509Certificates.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Security.Principal.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Security.SecureString.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Text.Encoding.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Text.Encoding.Extensions.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Text.RegularExpressions.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Threading.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Threading.Overlapped.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Threading.Tasks.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Threading.Tasks.Parallel.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Threading.Thread.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Threading.ThreadPool.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Threading.Timer.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.ValueTuple.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Xml.ReaderWriter.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Xml.XDocument.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Xml.XmlDocument.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Xml.XmlSerializer.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Xml.XPath.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Xml.XPath.XDocument.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\AForge.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\AForge.Video.DirectShow.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\AForge.Video.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\DotNetty.Buffers.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\DotNetty.Codecs.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\DotNetty.Codecs.Mqtt.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\DotNetty.Common.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\DotNetty.Handlers.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\DotNetty.Transport.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\log4net.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Amqp.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Client.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Client.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Security.Tpm.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Transport.Amqp.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Transport.Http.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Shared.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Data.Edm.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Data.OData.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Data.Services.Client.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Extensions.Logging.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Owin.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.ProjectOxford.Common.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.ProjectOxford.Face.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Rest.ClientRuntime.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.WindowsAzure.Storage.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Newtonsoft.Json.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Owin.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Diagnostics.DiagnosticSource.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.Http.Extensions.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.Http.Primitives.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Spatial.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\TSS.Net.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\AForge.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\AForge.Video.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\AForge.Video.DirectShow.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\DotNetty.Buffers.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\DotNetty.Codecs.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\DotNetty.Codecs.Mqtt.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\DotNetty.Common.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\DotNetty.Handlers.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\DotNetty.Transport.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\log4net.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Amqp.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Client.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Client.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Security.Tpm.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Transport.Amqp.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Transport.Http.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Shared.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Data.Edm.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Data.OData.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Data.Services.Client.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Extensions.Logging.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Owin.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.Rest.ClientRuntime.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Microsoft.WindowsAzure.Storage.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\Newtonsoft.Json.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.Http.Extensions.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Net.Http.Primitives.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\System.Spatial.xml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\TSS.Net.pdb
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\de\Microsoft.Data.Edm.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\es\Microsoft.Data.Edm.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\it\Microsoft.Data.Edm.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\de\Microsoft.Data.OData.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\es\Microsoft.Data.OData.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\fr\Microsoft.Data.OData.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\it\Microsoft.Data.OData.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\ja\Microsoft.Data.OData.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\ko\Microsoft.Data.OData.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\ru\Microsoft.Data.OData.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\de\System.Spatial.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\es\System.Spatial.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\fr\System.Spatial.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\it\System.Spatial.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\ja\System.Spatial.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\ko\System.Spatial.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\ru\System.Spatial.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\zh-Hans\System.Spatial.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\bin\Release\zh-Hant\System.Spatial.resources.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.csproj.App.config
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.exe.config
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\Interop.IWshRuntimeLibrary.dll
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.csproj.ResolveComReference.cache
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\MainWindow.g.cs
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\App.g.cs
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition_Content.g.cs
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition_MarkupCompile.cache
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition_MarkupCompile.lref
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\MainWindow.baml
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.g.resources
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.Properties.Resources.resources
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.csproj.GenerateResource.cache
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.csproj.CoreCompileInputs.cache
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.csproj.CopyComplete
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.exe
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.pdb
+C:\Users\MA388504\source\repos\SignageFaceRecognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.csprojResolveAssemblyReference.cache
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\logo.ico
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\welcome.jpg
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\SignageFaceRecognition.exe.config
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\SignageFaceRecognition.exe
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\SignageFaceRecognition.pdb
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Win32.Primitives.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\netstandard.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.AppContext.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Collections.Concurrent.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Collections.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Collections.NonGeneric.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Collections.Specialized.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.ComponentModel.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.ComponentModel.EventBasedAsync.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.ComponentModel.Primitives.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.ComponentModel.TypeConverter.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Console.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Data.Common.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Diagnostics.Contracts.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Diagnostics.Debug.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Diagnostics.FileVersionInfo.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Diagnostics.Process.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Diagnostics.StackTrace.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Diagnostics.TextWriterTraceListener.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Diagnostics.Tools.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Diagnostics.TraceSource.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Diagnostics.Tracing.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Drawing.Primitives.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Dynamic.Runtime.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Globalization.Calendars.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Globalization.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Globalization.Extensions.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.IO.Compression.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.IO.Compression.ZipFile.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.IO.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.IO.FileSystem.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.IO.FileSystem.DriveInfo.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.IO.FileSystem.Primitives.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.IO.FileSystem.Watcher.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.IO.IsolatedStorage.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.IO.MemoryMappedFiles.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.IO.Pipes.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.IO.UnmanagedMemoryStream.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Linq.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Linq.Expressions.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Linq.Parallel.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Linq.Queryable.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.Http.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.NameResolution.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.NetworkInformation.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.Ping.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.Primitives.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.Requests.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.Security.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.Sockets.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.WebHeaderCollection.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.WebSockets.Client.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.WebSockets.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.ObjectModel.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Reflection.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Reflection.Extensions.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Reflection.Primitives.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Resources.Reader.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Resources.ResourceManager.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Resources.Writer.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Runtime.CompilerServices.VisualC.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Runtime.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Runtime.Extensions.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Runtime.Handles.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Runtime.InteropServices.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Runtime.Numerics.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Runtime.Serialization.Formatters.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Runtime.Serialization.Json.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Runtime.Serialization.Primitives.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Runtime.Serialization.Xml.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Security.Claims.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Security.Cryptography.Algorithms.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Security.Cryptography.Csp.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Security.Cryptography.Encoding.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Security.Cryptography.Primitives.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Security.Cryptography.X509Certificates.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Security.Principal.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Security.SecureString.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Text.Encoding.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Text.Encoding.Extensions.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Text.RegularExpressions.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Threading.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Threading.Overlapped.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Threading.Tasks.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Threading.Tasks.Parallel.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Threading.Thread.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Threading.ThreadPool.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Threading.Timer.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.ValueTuple.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Xml.ReaderWriter.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Xml.XDocument.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Xml.XmlDocument.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Xml.XmlSerializer.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Xml.XPath.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Xml.XPath.XDocument.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\AForge.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\AForge.Video.DirectShow.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\AForge.Video.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\DotNetty.Buffers.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\DotNetty.Codecs.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\DotNetty.Codecs.Mqtt.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\DotNetty.Common.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\DotNetty.Handlers.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\DotNetty.Transport.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\log4net.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Amqp.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Client.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Client.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Security.Tpm.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Transport.Amqp.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Transport.Http.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Shared.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.KeyVault.Core.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Data.Edm.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Data.OData.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Data.Services.Client.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Extensions.Logging.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Owin.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.ProjectOxford.Common.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.ProjectOxford.Face.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Rest.ClientRuntime.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.WindowsAzure.Configuration.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.WindowsAzure.Storage.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Newtonsoft.Json.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Owin.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Diagnostics.DiagnosticSource.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.Http.Extensions.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.Http.Formatting.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.Http.Primitives.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Spatial.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\TSS.Net.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\AForge.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\AForge.Video.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\AForge.Video.DirectShow.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\DotNetty.Buffers.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\DotNetty.Codecs.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\DotNetty.Codecs.Mqtt.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\DotNetty.Common.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\DotNetty.Handlers.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\DotNetty.Transport.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\log4net.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Amqp.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Client.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Client.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Security.Tpm.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Transport.Amqp.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Provisioning.Transport.Http.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.Devices.Shared.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Azure.KeyVault.Core.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Data.Edm.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Data.OData.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Data.Services.Client.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Extensions.Logging.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Owin.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.Rest.ClientRuntime.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.WindowsAzure.Configuration.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.WindowsAzure.Storage.pdb
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Microsoft.WindowsAzure.Storage.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\Newtonsoft.Json.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Diagnostics.DiagnosticSource.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.Http.Extensions.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.Http.Formatting.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Net.Http.Primitives.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\System.Spatial.xml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\TSS.Net.pdb
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\de\Microsoft.Data.Edm.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\es\Microsoft.Data.Edm.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\fr\Microsoft.Data.Edm.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\it\Microsoft.Data.Edm.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\ja\Microsoft.Data.Edm.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\ko\Microsoft.Data.Edm.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\ru\Microsoft.Data.Edm.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\de\Microsoft.Data.OData.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\es\Microsoft.Data.OData.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\fr\Microsoft.Data.OData.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\it\Microsoft.Data.OData.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\ja\Microsoft.Data.OData.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\ko\Microsoft.Data.OData.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\ru\Microsoft.Data.OData.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\de\Microsoft.Data.Services.Client.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\es\Microsoft.Data.Services.Client.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\fr\Microsoft.Data.Services.Client.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\it\Microsoft.Data.Services.Client.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\ja\Microsoft.Data.Services.Client.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\ko\Microsoft.Data.Services.Client.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\ru\Microsoft.Data.Services.Client.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\de\System.Spatial.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\es\System.Spatial.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\fr\System.Spatial.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\it\System.Spatial.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\ja\System.Spatial.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\ko\System.Spatial.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\ru\System.Spatial.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\zh-Hans\System.Spatial.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\bin\Release\zh-Hant\System.Spatial.resources.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.csproj.App.config
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.csprojResolveAssemblyReference.cache
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.exe.config
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\Interop.IWshRuntimeLibrary.dll
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.csproj.ResolveComReference.cache
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\MainWindow.g.cs
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\App.g.cs
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition_Content.g.cs
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition_MarkupCompile.cache
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition_MarkupCompile.lref
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\MainWindow.baml
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.g.resources
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.Properties.Resources.resources
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.csproj.GenerateResource.cache
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.csproj.CoreCompileInputs.cache
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.csproj.CopyComplete
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.exe
+D:\Signage_Complete_Solution\Code\DigitalSignage_v1.0\Device Code\Signage Face Recognition\SignageFaceRecognition\obj\Release\SignageFaceRecognition.pdb

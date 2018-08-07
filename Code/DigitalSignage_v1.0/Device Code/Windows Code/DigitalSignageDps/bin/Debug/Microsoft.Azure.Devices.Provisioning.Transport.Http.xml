@@ -1,0 +1,920 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Azure.Devices.Provisioning.Transport.Http</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient">
+            <summary>
+            API for using the IotHub Device Provisioning Service Runtime Features
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient.BaseUri">
+            <summary>
+            The base URI of the service.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient.SerializationSettings">
+            <summary>
+            Gets or sets json serialization settings.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient.DeserializationSettings">
+            <summary>
+            Gets or sets json deserialization settings.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient.Credentials">
+            <summary>
+            Subscription credentials which uniquely identify client subscription.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient.RuntimeRegistration">
+            <summary>
+            Gets the IRuntimeRegistration.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient.#ctor(System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the DeviceProvisioningServiceRuntimeClient class.
+            </summary>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the DeviceProvisioningServiceRuntimeClient class.
+            </summary>
+            <param name='rootHandler'>
+            Optional. The http client handler used to handle http transport.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient.#ctor(System.Uri,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the DeviceProvisioningServiceRuntimeClient class.
+            </summary>
+            <param name='baseUri'>
+            Optional. The base URI of the service.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient.#ctor(System.Uri,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the DeviceProvisioningServiceRuntimeClient class.
+            </summary>
+            <param name='baseUri'>
+            Optional. The base URI of the service.
+            </param>
+            <param name='rootHandler'>
+            Optional. The http client handler used to handle http transport.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the DeviceProvisioningServiceRuntimeClient class.
+            </summary>
+            <param name='credentials'>
+            Required. Subscription credentials which uniquely identify client subscription.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the DeviceProvisioningServiceRuntimeClient class.
+            </summary>
+            <param name='credentials'>
+            Required. Subscription credentials which uniquely identify client subscription.
+            </param>
+            <param name='rootHandler'>
+            Optional. The http client handler used to handle http transport.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the DeviceProvisioningServiceRuntimeClient class.
+            </summary>
+            <param name='baseUri'>
+            Optional. The base URI of the service.
+            </param>
+            <param name='credentials'>
+            Required. Subscription credentials which uniquely identify client subscription.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the DeviceProvisioningServiceRuntimeClient class.
+            </summary>
+            <param name='baseUri'>
+            Optional. The base URI of the service.
+            </param>
+            <param name='credentials'>
+            Required. Subscription credentials which uniquely identify client subscription.
+            </param>
+            <param name='rootHandler'>
+            Optional. The http client handler used to handle http transport.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient.Initialize">
+            <summary>
+            Initializes client properties.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.IDeviceProvisioningServiceRuntimeClient">
+            <summary>
+            API for using the IotHub Device Provisioning Service Runtime Features
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.IDeviceProvisioningServiceRuntimeClient.BaseUri">
+            <summary>
+            The base URI of the service.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.IDeviceProvisioningServiceRuntimeClient.SerializationSettings">
+            <summary>
+            Gets or sets json serialization settings.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.IDeviceProvisioningServiceRuntimeClient.DeserializationSettings">
+            <summary>
+            Gets or sets json deserialization settings.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.IDeviceProvisioningServiceRuntimeClient.Credentials">
+            <summary>
+            Subscription credentials which uniquely identify client
+            subscription.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.IDeviceProvisioningServiceRuntimeClient.RuntimeRegistration">
+            <summary>
+            Gets the IRuntimeRegistration.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.IRuntimeRegistration">
+            <summary>
+            RuntimeRegistration operations.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.IRuntimeRegistration.OperationStatusLookupWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Gets the registration operation status.
+            </summary>
+            <param name='registrationId'>
+            Registration ID.
+            </param>
+            <param name='operationId'>
+            Operation ID.
+            </param>
+            <param name='idScope'>
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.IRuntimeRegistration.DeviceRegistrationStatusLookupWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistration,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Gets the device registration status.
+            </summary>
+            <param name='registrationId'>
+            Registration ID.
+            </param>
+            <param name='idScope'>
+            </param>
+            <param name='deviceRegistration'>
+            Device registration
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.IRuntimeRegistration.RegisterDeviceWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistration,System.Nullable{System.Boolean},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Registers the devices.
+            </summary>
+            <param name='registrationId'>
+            Registration ID.
+            </param>
+            <param name='idScope'>
+            </param>
+            <param name='deviceRegistration'>
+            Device registration request.
+            </param>
+            <param name='forceRegistration'>
+            Force the device to re-register. Setting this option may assign the
+            device to a different IotHub.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistration">
+            <summary>
+            Device registration.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistration.#ctor">
+            <summary>
+            Initializes a new instance of the DeviceRegistration class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistration.#ctor(System.String,Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.TpmAttestation)">
+            <summary>
+            Initializes a new instance of the DeviceRegistration class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistration.RegistrationId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistration.Tpm">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.TpmAttestation">
+            <summary>
+            Attestation via TPM.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.TpmAttestation.#ctor">
+            <summary>
+            Initializes a new instance of the TpmAttestation class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.TpmAttestation.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the TpmAttestation class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.TpmAttestation.EndorsementKey">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.TpmAttestation.StorageRootKey">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistrationResult">
+            <summary>
+            Device registration result.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistrationResult.Tpm">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistrationResult.X509">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistrationResult.RegistrationId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistrationResult.CreatedDateTimeUtc">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistrationResult.AssignedHub">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistrationResult.DeviceId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistrationResult.Status">
+            <summary>
+            Gets or sets possible values include: 'unassigned', 'assigning',
+            'assigned', 'failed', 'disabled'
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistrationResult.GenerationId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistrationResult.LastUpdatedDateTimeUtc">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistrationResult.ErrorCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistrationResult.ErrorMessage">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistrationResult.Etag">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.RegistrationOperationStatus">
+            <summary>
+            Registration operation status.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.RegistrationOperationStatus.#ctor">
+            <summary>
+            Initializes a new instance of the RegistrationOperationStatus
+            class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.RegistrationOperationStatus.#ctor(System.String,System.String,Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistrationResult)">
+            <summary>
+            Initializes a new instance of the RegistrationOperationStatus
+            class.
+            </summary>
+            <param name="operationId">Operation ID.</param>
+            <param name="status">Device enrollment status. Possible values
+            include: 'unassigned', 'assigning', 'assigned', 'failed',
+            'disabled'</param>
+            <param name="registrationState">Device registration
+            status.</param>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.RegistrationOperationStatus.OperationId">
+            <summary>
+            Gets or sets operation ID.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.RegistrationOperationStatus.Status">
+            <summary>
+            Gets or sets device enrollment status. Possible values include:
+            'unassigned', 'assigning', 'assigned', 'failed', 'disabled'
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.RegistrationOperationStatus.RegistrationState">
+            <summary>
+            Gets or sets device registration status.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.RegistrationOperationStatus.RetryAfter">
+            <summary>
+            Gets or sets the Retry-After header.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.TpmRegistrationResult">
+            <summary>
+            TPM registration result.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.TpmRegistrationResult.#ctor">
+            <summary>
+            Initializes a new instance of the TpmRegistrationResult class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.TpmRegistrationResult.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the TpmRegistrationResult class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.TpmRegistrationResult.AuthenticationKey">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509CertificateInfo">
+            <summary>
+            X509 certificate info.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509CertificateInfo.#ctor">
+            <summary>
+            Initializes a new instance of the X509CertificateInfo class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509CertificateInfo.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the X509CertificateInfo class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509CertificateInfo.SubjectName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509CertificateInfo.Sha1Thumbprint">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509CertificateInfo.Sha256Thumbprint">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509CertificateInfo.IssuerName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509CertificateInfo.NotBeforeUtc">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509CertificateInfo.NotAfterUtc">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509CertificateInfo.SerialNumber">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509CertificateInfo.Version">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509RegistrationResult">
+            <summary>
+            X509 registration result.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509RegistrationResult.#ctor">
+            <summary>
+            Initializes a new instance of the X509RegistrationResult class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509RegistrationResult.#ctor(Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509CertificateInfo,System.String,Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509CertificateInfo)">
+            <summary>
+            Initializes a new instance of the X509RegistrationResult class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509RegistrationResult.CertificateInfo">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509RegistrationResult.EnrollmentGroupId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.X509RegistrationResult.SigningCertificateInfo">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.RuntimeRegistration">
+            <summary>
+            RuntimeRegistration operations.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.RuntimeRegistration.#ctor(Microsoft.Azure.Devices.Provisioning.Client.Transport.DeviceProvisioningServiceRuntimeClient)">
+            <summary>
+            Initializes a new instance of the RuntimeRegistration class.
+            </summary>
+            <param name='client'>
+            Reference to the service client.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.RuntimeRegistration.Client">
+            <summary>
+            Gets a reference to the DeviceProvisioningServiceRuntimeClient
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.RuntimeRegistration.OperationStatusLookupWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Gets the registration operation status.
+            </summary>
+            <param name='registrationId'>
+            Registration ID.
+            </param>
+            <param name='operationId'>
+            Operation ID.
+            </param>
+            <param name='idScope'>
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.RuntimeRegistration.DeviceRegistrationStatusLookupWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistration,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Gets the device registration status.
+            </summary>
+            <param name='registrationId'>
+            Registration ID.
+            </param>
+            <param name='idScope'>
+            </param>
+            <param name='deviceRegistration'>
+            Device registration
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.RuntimeRegistration.RegisterDeviceWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistration,System.Nullable{System.Boolean},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Registers the devices.
+            </summary>
+            <param name='registrationId'>
+            Registration ID.
+            </param>
+            <param name='idScope'>
+            </param>
+            <param name='deviceRegistration'>
+            Device registration request.
+            </param>
+            <param name='forceRegistration'>
+            Force the device to re-register. Setting this option may assign the device
+            to a different IotHub.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.RuntimeRegistrationExtensions">
+            <summary>
+            Extension methods for RuntimeRegistration.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.RuntimeRegistrationExtensions.OperationStatusLookup(Microsoft.Azure.Devices.Provisioning.Client.Transport.IRuntimeRegistration,System.String,System.String,System.String)">
+            <summary>
+            Gets the registration operation status.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='registrationId'>
+            Registration ID.
+            </param>
+            <param name='operationId'>
+            Operation ID.
+            </param>
+            <param name='idScope'>
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.RuntimeRegistrationExtensions.OperationStatusLookupAsync(Microsoft.Azure.Devices.Provisioning.Client.Transport.IRuntimeRegistration,System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Gets the registration operation status.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='registrationId'>
+            Registration ID.
+            </param>
+            <param name='operationId'>
+            Operation ID.
+            </param>
+            <param name='idScope'>
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.RuntimeRegistrationExtensions.DeviceRegistrationStatusLookup(Microsoft.Azure.Devices.Provisioning.Client.Transport.IRuntimeRegistration,System.String,System.String,Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistration)">
+            <summary>
+            Gets the device registration status.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='registrationId'>
+            Registration ID.
+            </param>
+            <param name='idScope'>
+            </param>
+            <param name='deviceRegistration'>
+            Device registration
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.RuntimeRegistrationExtensions.DeviceRegistrationStatusLookupAsync(Microsoft.Azure.Devices.Provisioning.Client.Transport.IRuntimeRegistration,System.String,System.String,Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistration,System.Threading.CancellationToken)">
+            <summary>
+            Gets the device registration status.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='registrationId'>
+            Registration ID.
+            </param>
+            <param name='idScope'>
+            </param>
+            <param name='deviceRegistration'>
+            Device registration
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.RuntimeRegistrationExtensions.RegisterDevice(Microsoft.Azure.Devices.Provisioning.Client.Transport.IRuntimeRegistration,System.String,System.String,Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistration,System.Nullable{System.Boolean})">
+            <summary>
+            Registers the devices.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='registrationId'>
+            Registration ID.
+            </param>
+            <param name='idScope'>
+            </param>
+            <param name='deviceRegistration'>
+            Device registration request.
+            </param>
+            <param name='forceRegistration'>
+            Force the device to re-register. Setting this option may assign the device
+            to a different IotHub.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.RuntimeRegistrationExtensions.RegisterDeviceAsync(Microsoft.Azure.Devices.Provisioning.Client.Transport.IRuntimeRegistration,System.String,System.String,Microsoft.Azure.Devices.Provisioning.Client.Transport.Models.DeviceRegistration,System.Nullable{System.Boolean},System.Threading.CancellationToken)">
+            <summary>
+            Registers the devices.
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='registrationId'>
+            Registration ID.
+            </param>
+            <param name='idScope'>
+            </param>
+            <param name='deviceRegistration'>
+            Device registration request.
+            </param>
+            <param name='forceRegistration'>
+            Force the device to re-register. Setting this option may assign the device
+            to a different IotHub.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportHandlerHttp">
+            <summary>
+            Represents the HTTP protocol implementation for the Provisioning Transport Handler.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportHandlerHttp.RegisterAsync(Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportRegisterMessage,System.Threading.CancellationToken)">
+            <summary>
+            Registers a device described by the message.
+            </summary>
+            <param name="message">The provisioning message.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The registration result.</returns>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.TpmChallenge">
+            <summary>
+            TPM challenge.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.TpmChallenge.Message">
+            <summary>
+            Message.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.TpmChallenge.AuthenticationKey">
+            <summary>
+            Authentication key.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.TpmChallenge.KeyName">
+            <summary>
+            Key name.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Devices.Shared.Logging.Log">
+            <summary>The single event source instance to use for all logging.</summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Enter(System.Object,System.FormattableString,System.String)">
+            <summary>Logs entrance to a method.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="formattableString">A description of the entrance, including any arguments to the call.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Enter(System.Object,System.Object,System.String)">
+            <summary>Logs entrance to a method.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="arg0">The object to log.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Enter(System.Object,System.Object,System.Object,System.String)">
+            <summary>Logs entrance to a method.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="arg0">The first object to log.</param>
+            <param name="arg1">The second object to log.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Enter(System.Object,System.Object,System.Object,System.Object,System.String)">
+            <summary>Logs entrance to a method.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="arg0">The first object to log.</param>
+            <param name="arg1">The second object to log.</param>
+            <param name="arg2">The third object to log.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Exit(System.Object,System.FormattableString,System.String)">
+            <summary>Logs exit from a method.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="formattableString">A description of the exit operation, including any return values.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Exit(System.Object,System.Object,System.String)">
+            <summary>Logs exit from a method.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="arg0">A return value from the member.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Exit(System.Object,System.Object,System.Object,System.String)">
+            <summary>Logs exit from a method.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="arg0">A return value from the member.</param>
+            <param name="arg1">A second return value from the member.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Info(System.Object,System.FormattableString,System.String)">
+            <summary>Logs an information message.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="formattableString">The message to be logged.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Info(System.Object,System.Object,System.String)">
+            <summary>Logs an information message.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="message">The message to be logged.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Error(System.Object,System.FormattableString,System.String)">
+            <summary>Logs an error message.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="formattableString">The message to be logged.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Error(System.Object,System.Object,System.String)">
+            <summary>Logs an error message.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="message">The message to be logged.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Fail(System.Object,System.FormattableString,System.String)">
+            <summary>Logs a fatal error and raises an assert.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="formattableString">The message to be logged.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Fail(System.Object,System.Object,System.String)">
+            <summary>Logs a fatal error and raises an assert.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="message">The message to be logged.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.DumpBuffer(System.Object,System.Byte[],System.String)">
+            <summary>Logs the contents of a buffer.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="buffer">The buffer to be logged.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.DumpBuffer(System.Object,System.Byte[],System.Int32,System.Int32,System.String)">
+            <summary>Logs the contents of a buffer.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="buffer">The buffer to be logged.</param>
+            <param name="offset">The starting offset from which to log.</param>
+            <param name="count">The number of bytes to log.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.DumpBuffer(System.Object,System.IntPtr,System.Int32,System.String)">
+            <summary>Logs the contents of a buffer.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="bufferPtr">The starting location of the buffer to be logged.</param>
+            <param name="count">The number of bytes to log.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Associate(System.Object,System.Object,System.String)">
+            <summary>Logs a relationship between two objects.</summary>
+            <param name="first">The first object.</param>
+            <param name="second">The second object.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Associate(System.Object,System.Object,System.Object,System.String)">
+            <summary>Logs a relationship between two objects.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="first">The first object.</param>
+            <param name="second">The second object.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+    </members>
+</doc>

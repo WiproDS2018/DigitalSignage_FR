@@ -1,0 +1,495 @@
+c:\users\admin\documents\visual studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+c:\users\admin\documents\visual studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler.mdf
+c:\users\admin\documents\visual studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler_log.ldf
+c:\users\admin\documents\visual studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+c:\users\admin\documents\visual studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+c:\users\admin\documents\visual studio 2015\Projects\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+c:\users\admin\documents\visual studio 2015\Projects\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler.mdf
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler_log.ldf
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler.mdf
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler_log.ldf
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler.mdf
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler_log.ldf
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler.mdf
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler_log.ldf
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\SchedulerConsole2.1\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler.mdf
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler_log.ldf
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.2\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.csprojResolveAssemblyReference.cache
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler.mdf
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler_log.ldf
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.dll
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.dll
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.dll
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.dll
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.dll
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.dll
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.dll
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.dll
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.dll
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.dll
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.dll
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.xml
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.xml
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.xml
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.xml
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.xml
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.xml
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.xml
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.xml
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.xml
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.xml
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.xml
+D:\SchedulerConsole2.2 OnlineDB NewDB\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler.mdf
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler_log.ldf
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.3\SchedulerConsole2.3\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler.mdf
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler_log.ldf
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler.mdf
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler_log.ldf
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.4\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.csprojResolveAssemblyReference.cache
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler.mdf
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Scheduler_log.ldf
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.dll
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.xml
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.csprojResolveAssemblyReference.cache
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe.manifest
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.application
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.exe.manifest
+E:\Digital Signage\Dgital Signage Projects\Demo\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.application
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe.manifest
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.application
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.dll
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.dll
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.dll
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.dll
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.dll
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.dll
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.dll
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.dll
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.dll
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.dll
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.dll
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.xml
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.xml
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Newtonsoft.Json.xml
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PCLCrypto.xml
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.BCrypt.xml
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Kernel32.xml
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.NCrypt.xml
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.xml
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.xml
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\System.Web.Http.xml
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\bin\Debug\Validation.xml
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.csprojResolveAssemblyReference.cache
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.exe.manifest
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.application
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.5\SchedulerConsole2.4\SchedulerConsole\SchedulerConsole\obj\Debug\SchedulerConsole.csproj.SchedulerConsole.exe.config
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+E:\Digital Signage\Dgital Signage Projects\Cleaning\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.exe.manifest
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.application
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.dll
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.dll
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Newtonsoft.Json.dll
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PCLCrypto.dll
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.BCrypt.dll
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.Kernel32.dll
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.NCrypt.dll
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.dll
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.dll
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\System.Web.Http.dll
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Validation.dll
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.xml
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.xml
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Newtonsoft.Json.xml
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PCLCrypto.xml
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.BCrypt.xml
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.Kernel32.xml
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.NCrypt.xml
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.Windows.Core.xml
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.xml
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\System.Web.Http.xml
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Validation.xml
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.exe.manifest
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.application
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\log4net.dll
+D:\September-11-Signage\Updated-11 sep\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\log4net.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\StickSide\Sep11Latest\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\StickSide\Sep11Latest\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\StickSide\Sep11Latest\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.exe.manifest
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.application
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\log4net.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Newtonsoft.Json.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PCLCrypto.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.BCrypt.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.Kernel32.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.NCrypt.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\System.Web.Http.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Validation.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\log4net.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Newtonsoft.Json.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PCLCrypto.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.BCrypt.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.Kernel32.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.NCrypt.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\System.Web.Http.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Validation.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.csproj.CoreCompileInputs.cache
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.exe.manifest
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.application
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SourceCod-Sched-Play-Stick Sep12\SourceCod-Sched-Play-Stick Sep12\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.exe.manifest
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.application
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\log4net.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Newtonsoft.Json.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PCLCrypto.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.BCrypt.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.Kernel32.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.NCrypt.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\System.Web.Http.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Validation.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\log4net.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Newtonsoft.Json.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PCLCrypto.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.BCrypt.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.Kernel32.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\PInvoke.NCrypt.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\System.Web.Http.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\bin\Debug\Validation.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.exe.manifest
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.application
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\obj\Debug\SchedulerConsole.csproj.CoreCompileInputs.cache
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\SchedulerConsole.exe.config
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\SchedulerConsole.exe.manifest
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\SchedulerConsole.application
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\SchedulerConsole.exe
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\SchedulerConsole.pdb
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\log4net.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\Newtonsoft.Json.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\PCLCrypto.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\PInvoke.BCrypt.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\PInvoke.Kernel32.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\PInvoke.NCrypt.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\System.Web.Http.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\Validation.dll
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\log4net.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\Microsoft.Azure.Amqp.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\Microsoft.Azure.Devices.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\Newtonsoft.Json.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\PCLCrypto.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\PInvoke.BCrypt.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\PInvoke.Kernel32.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\PInvoke.NCrypt.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\System.Net.Http.Formatting.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\System.Web.Http.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\bin\Debug\Validation.xml
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\obj\Debug\SchedulerConsole.exe.manifest
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\obj\Debug\SchedulerConsole.application
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\obj\Debug\SchedulerConsole.exe
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\obj\Debug\SchedulerConsole.pdb
+F:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\SchedulerConsoleDPs\SchedulerConsole\obj\Debug\SchedulerConsole.csprojResolveAssemblyReference.cache

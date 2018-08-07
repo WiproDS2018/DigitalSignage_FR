@@ -1,0 +1,271 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "azureSQL": {
+            "type": "object"
+        },
+        "apiVersions": {
+            "type": "object"
+        },
+        "omsSettings": {
+            "type": "object"
+        },
+        "costingModel": {
+            "type": "string"
+        },
+        "costingOne": {
+            "type": "object"
+        },
+        "costingTwo": {
+            "type": "object"
+        },
+        "costingThree": {
+            "type": "object"
+        },
+        "costingFour": {
+            "type": "object"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "apiVersion": "[parameters('apiVersions').sqlServerApiVersion]",
+            "type": "Microsoft.Sql/servers",
+            "location": "[parameters('azureSQL').location]",
+            "name": "[parameters('azureSQL').serverName]",
+            "properties": {
+                "administratorLogin": "[parameters('azureSQL').sqlAuthenticationLogin]",
+                "administratorLoginPassword": "[parameters('azureSQL').sqlAuthenticationPassword]",
+                "version": "12.0"
+            },
+            "resources": [
+                {
+                    "apiVersion": "[parameters('apiVersions').sqlServerApiVersion]",
+                    "type": "failoverGroups",
+                    "name": "[parameters('azureSQL').sqlFailoverGroupName]",
+                    "properties": {
+                        "serverName": "[parameters('azureSQL').serverName]",
+                        "partnerServers": [
+                            {
+                                "id": "[resourceId('Microsoft.Sql/servers/', parameters('azureSQL').recoveryServerName)]"
+                            }
+                        ],
+                        "readWriteEndpoint": {
+                            "failoverPolicy": "Automatic",
+                            "failoverWithDataLossGracePeriodMinutes": 60
+                        },
+                        "readOnlyEndpoint": {
+                            "failoverPolicy": "Disabled"
+                        },
+                        "databases": [
+                            "[resourceId('Microsoft.Sql/servers/databases', parameters('azureSQL').serverName, parameters('azureSQL').databaseName)]"
+                        ]
+                    },
+                    "dependsOn": [
+                        "[parameters('azureSQL').serverName]",
+                        "[resourceId('Microsoft.Sql/servers', parameters('azureSQL').recoveryServerName)]",
+                        "[resourceId('Microsoft.Sql/servers/databases', parameters('azureSQL').serverName, parameters('azureSQL').databaseName)]"
+                    ]
+                },
+                {
+                    "apiVersion": "[parameters('apiVersions').sqlDBApiVersion]",
+                    "type": "databases",
+                    "dependsOn": [
+                        "[concat('Microsoft.Sql/servers/', parameters('azureSQL').serverName)]"
+                    ],
+                    "location": "[parameters('azureSQL').location]",
+                    "name": "[parameters('azureSQL').databaseName]",
+                    "properties": {
+                        "collation": "[parameters('azureSQL').collation]",
+                        "edition": "[parameters(concat('costing',parameters('costingModel'))).edition]",
+                        "maxSizeBytes": "[parameters('azureSQL').maxSizeBytes]",
+                        "serviceLevelObjective": "S0",
+                        "requestedServiceObjectiveName": "[parameters(concat('costing',parameters('costingModel'))).requestedServiceObjectiveName]"
+                    },
+                    "resources": [
+                        {
+                            "name": "myImport1",
+                            "type": "extensions",
+                            "apiVersion": "[parameters('apiVersions').sqlDBApiVersion]",
+                            "dependsOn": [
+                                "[concat('Microsoft.Sql/servers/',parameters('azureSQL').serverName, '/databases/', parameters('azureSQL').databaseName)]"
+                            ],
+                            "properties": {
+                                "storageKeyType": "[parameters('azureSQL').storageKeyType]",
+                                "storageKey": "[parameters('azureSQL').storageKey]",
+                                "storageUri": "[parameters('azureSQL').storageUri1]",
+                                "administratorLogin": "[parameters('azureSQL').sqlAuthenticationLogin]",
+                                "administratorLoginPassword": "[parameters('azureSQL').sqlAuthenticationPassword]",
+                                "operationMode": "Import"
+                            }
+                        },
+                        {
+                            "name": "Microsoft.Insights/service",
+                            "type": "providers/diagnosticSettings",
+                            "apiVersion": "2015-07-01",
+                            "dependsOn": [
+                                "[concat('Microsoft.Sql/servers/', parameters('azureSQL').serverName)]",
+                                "[concat('Microsoft.Sql/servers/',parameters('azureSQL').serverName, '/databases/', parameters('azureSQL').databaseName)]"
+                            ],
+                            "properties": {
+                                "workspaceId": "[resourceId('Microsoft.OperationalInsights/workspaces/', parameters('omsSettings').omsWorkspaceName)]",
+                                "logs": [
+                                    {
+                                        "category": "Timeouts",
+                                        "enabled": true,
+                                        "retentionPolicy": {
+                                            "days": 0,
+                                            "enabled": false
+                                        }
+                                    },
+                                    {
+                                        "category": "QueryStoreRuntimeStatistics",
+                                        "enabled": true,
+                                        "retentionPolicy": {
+                                            "days": 0,
+                                            "enabled": false
+                                        }
+                                    },
+                                    {
+                                        "category": "QueryStoreWaitStatistics",
+                                        "enabled": true,
+                                        "retentionPolicy": {
+                                            "days": 0,
+                                            "enabled": false
+                                        }
+                                    },
+                                    {
+                                        "category": "Errors",
+                                        "enabled": true,
+                                        "retentionPolicy": {
+                                            "days": 0,
+                                            "enabled": false
+                                        }
+                                    },
+                                    {
+                                        "category": "DatabaseWaitStatistics",
+                                        "enabled": true,
+                                        "retentionPolicy": {
+                                            "days": 0,
+                                            "enabled": false
+                                        }
+                                    },
+                                    {
+                                        "category": "Blocks",
+                                        "enabled": true,
+                                        "retentionPolicy": {
+                                            "days": 0,
+                                            "enabled": false
+                                        }
+                                    },
+                                    {
+                                        "category": "SQLInsights",
+                                        "enabled": true,
+                                        "retentionPolicy": {
+                                            "days": 0,
+                                            "enabled": false
+                                        }
+                                    },
+                                    {
+                                        "category": "Audit",
+                                        "enabled": true,
+                                        "retentionPolicy": {
+                                            "days": 0,
+                                            "enabled": false
+                                        }
+                                    }
+                                ],
+                                "metrics": [
+                                    {
+                                        "timeGrain": "AllMetrics",
+                                        "category": "AllMetrics",
+                                        "enabled": true,
+                                        "retentionPolicy": {
+                                            "enabled": false,
+                                            "days": 0
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Microsoft.Sql/servers",
+            "kind": "v12.0",
+            "name": "[parameters('azureSQL').recoveryServerName]",
+            "apiVersion": "[parameters('apiVersions').sqlDBApiVersion]",
+            "location": "[parameters('azureSQL').locationDr]",
+            "properties": {
+                "administratorLogin": "[parameters('azureSQL').recoverySqlAuthenticationLogin]",
+                "administratorLoginPassword": "[parameters('azureSQL').recoverySqlAuthenticationPassword]",
+                "version": "12.0"
+            },
+            "dependsOn": [
+                "[concat('Microsoft.Sql/servers/',parameters('azureSQL').serverName, '/databases/', parameters('azureSQL').databaseName)]"
+            ],
+            "resources": [
+                {
+                    "type": "databases",
+                    "name": "[parameters('azureSQL').databaseName]",
+                    "apiVersion": "[parameters('apiVersions').sqlDBApiVersion]",
+                    "location": "[parameters('azureSQL').locationDr]",
+                    "tags": {
+                        "displayName": "SqlDatabase"
+                    },
+                    "properties": {
+                        "createMode": "OnlineSecondary",
+                        "sourceDatabaseId": "[resourceId('Microsoft.Sql/servers/databases', parameters('azureSQL').serverName, parameters('azureSQL').databaseName)]",
+                        "collation": "[parameters('azureSQL').collation]",
+                        "serviceLevelObjective": "S0",
+                        "edition": "[parameters(concat('costing',parameters('costingModel'))).edition]",
+                        "maxSizeBytes": "[parameters('azureSQL').maxSizeBytes]",
+                        "requestedServiceObjectiveName": "[parameters(concat('costing',parameters('costingModel'))).requestedServiceObjectiveName]"
+                    },
+                    "dependsOn": [
+                        "[concat('Microsoft.Sql/servers/', parameters('azureSQL').recoveryServerName)]"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Microsoft.Sql/servers/firewallRules",
+            "location": "[parameters('azureSQL').location]",
+            "name": "[concat(parameters('azureSQL').serverName,'/','allowall')]",
+            "apiVersion": "[parameters('apiVersions').sqlDBApiVersion]",
+            "dependsOn": [
+                "[concat('Microsoft.Sql/servers/', parameters('azureSQL').serverName)]"
+            ],
+            "properties": {
+                "endIpAddress": "0.0.0.0",
+                "startIpAddress": "0.0.0.0"
+            }
+        },
+        {
+            "type": "Microsoft.Sql/servers/firewallRules",
+            "location": "[parameters('azureSQL').locationDr]",
+            "name": "[concat(parameters('azureSQL').recoveryServerName,'/','allowall')]",
+            "apiVersion": "[parameters('apiVersions').sqlDBApiVersion]",
+            "dependsOn": [
+                "[concat('Microsoft.Sql/servers/', parameters('azureSQL').recoveryServerName)]"
+            ],
+            "properties": {
+                "endIpAddress": "0.0.0.0",
+                "startIpAddress": "0.0.0.0"
+            }
+        }
+    ],
+    "outputs": {
+        "azureSQLServerName": {
+            "type": "string",
+            "value": "[concat(parameters('azureSQL').serverName,'.database.windows.net')]"
+        },
+        "signageDBName": {
+            "type": "string",
+            "value": "[parameters('azureSQL').databaseName]"
+        }
+    }
+}

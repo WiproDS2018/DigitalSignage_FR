@@ -1,0 +1,8 @@
+/In:"D:\Windows10493\IoTCoreDefaultApp\CS\IoTCoreDefaultApp\obj\ARM\Release\ilc\in"
+/Lib:"D:\Windows10493\IoTCoreDefaultApp\CS\IoTCoreDefaultApp\obj\ARM\Release\ilc\in"
+/Lib:"C:\Program Files (x86)\MSBuild\15.0\.Net\.NetNative\15.0.24211\ARM\ilc\lib\Private"
+/Lib:"C:\Program Files (x86)\Windows Kits\10\References\Windows.System.SystemManagementContract\2.0.0.0"
+/WinMD:"D:\Windows10493\IoTCoreDefaultApp\CS\IoTCoreDefaultApp\obj\ARM\Release\ilc\in\WinMetadata\Windows.winmd"
+/VSTelemetrySessionSettings:{"AppId":1001,"AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","HostName":"Dev14","Id":"0937d8ed-2d7d-43fa-b8fb-ab130bf5148f","IsOptedIn":true,"ProcessStartTime":636667597452680258,"UserId":"41922b88-3043-4674-8dc6-78dfab9c09a6"}
+/RdXmlPath:"C:\Program Files (x86)\MSBuild\15.0\.Net\.NetNative\15.0.24211\LibraryXML"
+/RunOnlyPreDR

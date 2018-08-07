@@ -1,0 +1,1737 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "solutionType": {
+            "type": "string",
+            "defaultValue": "",
+            "allowedValues": [
+                "solution with monitoring",
+                "solution without monitoring"
+            ],
+            "metadata": {
+                "description": "1.solution with monitoring - this will deploy core digital signage solution & monitoring components. 2. solution without monitoring - this will deploy core digital signage solution"
+            }
+        },
+        "costingModel": {
+            "type": "string",
+            "defaultValue": "",
+            "allowedValues": [
+                "One",
+                "Two",
+                "Three",
+                "Four"
+            ],
+            "metadata": {
+                "description": "specify the costing model"
+            }
+        },
+        "sqlAdministratorLogin": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+                "description": "provide the user name for the sql server, please make a note of Username this will be used further"
+            }
+        },
+        "sqlAdministratorLoginPassword": {
+            "type": "securestring",
+            "defaultValue": "",
+            "metadata": {
+                "description": "provide the password for the sql server, make a note of the Password this will be used further"
+            }
+        },
+        "idaTenant": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+                "description": "Describes B2C Tenant Name Directory,refer the prereq section of deployment document for more info"
+            }
+        },
+        "idaClientId": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+                "description": "Describes the client Id of the contentmanager application registered in B2C Directory,refer the prereq section of deployment document for more info"
+            }
+        },
+        "contentManagerAppName": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+                "description": "specify the website name for content manager web app"
+            }
+        },
+        "recoveryIdaClientId": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+                "description": "if you select costing model as Four specify the client Id of the recovery contentmanager application registered in B2C Directory ,refer the prereq section of deployment document for more info "
+            }
+        },
+        "recoveryContentManagerAppName": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+                "description": " if you select costing model four specify the website name for recovery content manager web app"
+            }
+        },
+        "sessionId": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+                "type": "sessionid",
+                "description": "provide the guid prefix for the runbook job to be created"
+            }
+        },
+        "storageBlobUrl": {
+            "type": "string",
+            "defaultValue": "https://digitalsignagearm.blob.core.windows.net/rms-iot/",
+            "metadata": {
+                "description": "specify the blob url where all your code is present"
+            }
+        },
+        "locationDr": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+                "description": "if you select costing model as Four specify the region for webapps and azure sqlserver desaster recovary it should be different of resource group region otherwise it is optional"
+            }
+        },
+        
+        "omsWorkspaceRegion": {
+            "type": "string",
+            "defaultValue": "eastus",
+            "allowedValues": [
+                "eastus",
+                "westeurope",
+                "southeastasia",
+                "australiasoutheast"
+            ],
+            "metadata": {
+                "description": "specify the region for oms workspace, if you have selected solution type as without monitoring this is optional"
+            }
+        },
+        "omsAutomationRegion": {
+            "type": "string",
+            "defaultValue": "eastus2",
+            "allowedValues": [
+                "westeurope",
+                "southeastasia",
+                "eastus2",
+                "southcentralus",
+                "japaneast",
+                "southeastasia",
+                "southcentralus",
+                "northeurope",
+                "canadacentral",
+                "australiasoutheast",
+                "centralindia",
+                "japaneast"
+            ],
+            "metadata": {
+                "description": "specify the region for oms automation account, if you have selected solution type as without monitoring this is optional"
+            }
+        },
+        "dataRetention": {
+            "type": "int",
+            "defaultValue": 7,
+            "minValue": 7,
+            "maxValue": 730,
+            "metadata": {
+                "description": "specify the oms retention period in days, if you have selected solution type as without monitoring this is optional"
+            }
+        },
+        "appInsightsLocation": {
+            "type": "string",
+            "defaultValue": "westus2",
+            "allowedValues": [
+                "eastus",
+                "northeurope",
+                "southcentralus",
+                "southeastasia",
+                "westeurope",
+                "westus2"
+            ],
+            "metadata": {
+                "description": "specify the region for application insights, if you have selected solution type as without monitoring this is optional"
+            }
+        },
+        "capacityUnits": {
+            "type": "int",
+            "minValue": 1,
+            "defaultValue": 1,
+            "metadata": {
+                "description": "number of desired iot hub units. restricted to 1 unit for F1. Can be set up to maximum number allowed for subscription."
+            }
+        },
+        "iotDpsRegion": {
+            "type": "string",
+            "defaultValue": "eastus",
+            "allowedValues": [
+                "westeurope",
+                "southeastasia",
+                "eastus",
+                "westus",
+                "eastasia",
+                "northeurope"
+            ],
+            "metadata": {
+                "description": "specify the region for iot device provisioning service"
+            }
+        },
+        "d2cMessageRetentionInDaysPeriod": {
+            "type": "int",
+            "minValue": 1,
+            "maxValue": 7,
+            "defaultValue": 1,
+            "metadata": {
+                "description": "specify the iot hub messages retention period in days, for device-to-cloud mesaages"
+            }
+        },
+        "d2cPartitionCount": {
+            "type": "int",
+            "minValue": 2,
+            "defaultValue": 2,
+            "allowedValues": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32
+            ],
+            "metadata": {
+                "description": "specify the number of desired partitions for device-to-cloud event ingestion.Restricted to 1 unit for F1"
+            }
+        },
+        "skuCapacity": {
+            "type": "int",
+            "defaultValue": 1,
+            "minValue": 1,
+            "metadata": {
+                "description": "describes plan's instance count"
+            }
+        },
+        "trafficRoutingMethod": {
+            "type": "string",
+            "defaultValue": "Priority",
+            "allowedValues": [
+                "Performance",
+                "Weighted",
+                "Geographic",
+                "Priority"
+            ],
+            "metadata": {
+                "description": "specify the traffic routing method for traffic manager"
+            }
+        }
+    },
+    "variables": {
+        "costingOne": {
+            "iotHubSkuName": "F1",
+            "skuName": "F1",
+            "omsLogAnalyticsSku": "free",
+            "edition": "Basic",
+            "requestedServiceObjectiveName": "Basic",
+            "maxSizeBytes": "2147483648"
+        },
+        "costingTwo": {
+            "iotHubSkuName": "S1",
+            "skuName": "B1",
+            "omsLogAnalyticsSku": "free",
+            "edition": "Basic",
+            "requestedServiceObjectiveName": "Basic",
+            "maxSizeBytes": "2147483648"   
+        },
+        "costingThree": {
+            "iotHubSkuName": "S1",
+            "skuName": "B1",
+            "omsLogAnalyticsSku": "standalone",
+            "edition": "Standard",
+            "requestedServiceObjectiveName": "S0",
+            "maxSizeBytes": "32212254720"
+        },
+        "costingFour": {
+            "iotHubSkuName": "S1",
+            "skuName": "S1",
+            "omsLogAnalyticsSku": "standalone",
+            "edition": "Standard",
+            "requestedServiceObjectiveName": "S0",
+            "maxSizeBytes": "32212254720"
+        },
+        "apiVersions": {
+            "deploymentApiVersion": "2016-02-01",
+            "sqlServerApiVersion": "2015-05-01-preview",
+            "sqlDBApiVersion": "2014-04-01-preview",
+            "sqlPolicyApiversion": "2014-04-01",
+            "iotHubApiversion": "2016-02-03",
+            "omsApiVersion": "2015-03-20",
+            "omsDataApiVersion": "2015-11-01-preview",
+            "storageApiVersion": "2015-06-15",
+            "storageApiVersion1": "2016-01-01",
+            "automationApiVersion": "2015-10-31",
+            "appInsightsApiVersion": "2014-04-01",
+            "networkApiVerion": "2017-08-01",
+            "computeApiVersion": "2016-04-30",
+            "webApiVersion": "2016-03-01",
+            "webApiVersion1": "2015-08-01",
+            "webApiVersion2": "2016-01-01",
+            "iotDpsApiVersion": "2017-11-15",
+            "trafficManagerApiVersion": "2017-05-01"
+        },
+        "iotHubSettings": {
+            "location": "[variables('location')]",
+            "iotHubName": "[concat('digital-signagehub', variables('suffix'))]",
+            "capacityUnits": "[parameters('capacityUnits')]",
+            "d2cMessageRetentionInDaysPeriod": "[parameters('d2cMessageRetentionInDaysPeriod')]",
+            "d2cPartitionCount": "[parameters('d2cPartitionCount')]"
+        },
+        "webSiteSettings": {
+            "location": "[variables('location')]",
+            "locationDr": "[parameters('locationDr')]",
+            "hostingPlanName": "AppSerPlan",
+            "hostingPlanNameDr": "AppSerPlanRecovery",
+            "skuCapacity": "[parameters('skuCapacity')]",
+            "webSiteName": "[parameters('contentManagerAppName')]",
+            "idaTenant": "[parameters('idaTenant')]",
+            "idaClientId": "[parameters('idaClientId')]",
+            "recoveryIdaClientId": "[parameters('recoveryIdaClientId')]",
+            "webSiteNameDr": "[parameters('recoveryContentManagerAppName')]",
+            "WebAppPackageURI": "[concat(parameters('storageBlobUrl'),'DigitalSignagewithAI.zip')]",
+            "connectionString1": "[concat('Server=tcp:',variables('azureSQL').serverName,'.database.windows.net,1433;Initial Catalog=',variables('azureSQL').databaseName,';Persist Security Info=False;User ID=',variables('azureSQL').sqlAuthenticationLogin,';Password=',variables('azureSQL').sqlAuthenticationPassword,';MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;')]",
+            "connectionString": "[concat('Server=tcp:',variables('azureSQL').sqlFailoverGroupName,'.database.windows.net,1433;Initial Catalog=',variables('azureSQL').databaseName,';Persist Security Info=False;User ID=',variables('azureSQL').sqlAuthenticationLogin,';Password=',variables('azureSQL').sqlAuthenticationPassword,';MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;')]",
+            "signageServerName": "[concat('signageServer', variables('suffix'))]",
+            "signageServerNameDr": "[concat('RecoverysignageServer', variables('suffix'))]",
+            "campaignServerName": "[concat('compaignjobServer', variables('suffix'))]",
+            "campaignServerNameDr": "[concat('recoverycompaignjobServer', variables('suffix'))]",
+            "signagePackageURI": "[concat(parameters('storageBlobUrl'),'Schedulerjob_with_ai.zip')]",
+            "jobCollectionName": "SchedulerJob",
+            "jobCollectionNameDr": "RecoverySchedulerJob",
+            "signageOutMonitorUrl": "[concat(parameters('storageBlobUrl'),'schedulerjobwithoutai.zip')]",
+            "webAppOutMonitorUrl": "[concat(parameters('storageBlobUrl'),'DigitalSignagewithoutAI.zip')]",
+            "nodeServerName": "[concat('nodeserverapp', variables('suffix'))]",
+            "nodeServerNameDr": "[concat('Recoverynodeserverapp', variables('suffix'))]",
+            "nodeServerPackageURI": "[concat(parameters('storageBlobUrl'),'nodeserverv24318.zip')]",
+            "campaignJobUrl": "[concat(parameters('storageBlobUrl'),'campaignexpirejobwithoutai.zip')]",
+            "campaignJobMonitorUrl": "[concat(parameters('storageBlobUrl'),'campainexpirejob_with_ai.zip')]",
+            "signageDbContext1": "[concat('metadata=res://*/;provider=System.Data.SqlClient;provider connection string=\"data source=',variables('azureSQL').serverName,'.database.windows.net;Initial Catalog=',variables('azureSQL').databaseName,';User ID=',variables('azureSQL').sqlAuthenticationLogin,';Password=',variables('azureSQL').sqlAuthenticationPassword,';MultipleActiveResultSets=True;App=EntityFramework\"')]",
+            "signageDbContext": "[concat('metadata=res://*/;provider=System.Data.SqlClient;provider connection string=\"data source=',variables('azureSQL').sqlFailoverGroupName,'.database.windows.net;Initial Catalog=',variables('azureSQL').databaseName,';User ID=',variables('azureSQL').sqlAuthenticationLogin,';Password=',variables('azureSQL').sqlAuthenticationPassword,';MultipleActiveResultSets=True;App=EntityFramework\"')]"
+        },
+        "trafficManagerSettings": {
+            "trafficManagerName": "[parameters('contentManagerAppName')]",
+            "trafficManagerName1": "[concat('nodeserverapptm', variables('suffix'))]",
+            "trafficRoutingMethod": "[parameters('trafficRoutingMethod')]"
+        },
+        "automationSettings": {
+            "automationAccountName": "[concat('containerCreate', variables('suffix'))]",
+            "automationLocation": "eastus2",
+            "automationSku": "Free",
+            "runbookName": "container",
+            "runbookUri": "[concat(variables('baseUrl'),'scripts/containerscreate.ps1')]",
+            "sessionId": "[parameters('sessionId')]",
+            "destContainer1": "signageimagecontainer",
+            "destContainer2": "signagehtmlcontainer",
+            "destContainer3": "signagetemplatecontainer"
+        },
+        "omsSettings": {
+            "omsWorkspaceName": "[concat('omsws', variables('suffix'))]",
+            "omsWorkspaceRegion": "[parameters('omsWorkspaceRegion')]",
+            "omsAutomationRegion": "[parameters('omsAutomationRegion')]",
+            "omsAutomationAccountName": "[concat('autoupdate', variables('suffix'))]",
+            "dataRetention": "[parameters('dataRetention')]"
+        },
+        "appInsights": {
+            "location": "[parameters('appInsightsLocation')]",
+            "appInsightResourceName": "[concat('AppInsights', uniquestring(resourceGroup().id))]"
+        },
+        "iotDpsSettings": {
+            "location": "[parameters('iotDpsRegion')]",
+            "iotDpsName": "[concat('iotDeviceProvision', variables('suffix'))]"
+        },
+        "storageSettings": {
+            "location": "[variables('location')]",
+            "storageAccountName": "[concat('imagecontent', variables('suffix'))]",
+            "storageAccountType": "Standard_LRS"
+        },
+        "azureSQL": {
+            "location": "[variables('location')]",
+            "locationDr": "[parameters('locationDr')]",
+            "sqlAuthenticationLogin": "[parameters('sqlAdministratorLogin')]",
+            "sqlAuthenticationPassword": "[parameters('sqlAdministratorLoginPassword')]",
+            "recoverySqlAuthenticationLogin": "[parameters('sqlAdministratorLogin')]",
+            "recoverySqlAuthenticationPassword": "[parameters('sqlAdministratorLoginPassword')]",
+            "collation": "SQL_Latin1_General_CP1_CI_AS",
+            "databaseName": "signagedb",
+            "maxSizeBytes": "[variables(concat('costing',parameters('costingModel'))).maxSizeBytes]",
+            "serverName": "[concat('digitalsqlserver',variables('suffix'))]",
+            "recoveryServerName": "[concat('recoverdigitalsqlserver',variables('suffix'))]",
+            "storageKeyType": "SharedAccessKey",
+            "storageKey": "?",
+            "sqlFailoverGroupName": "[concat('azuresqlfailover',variables('suffix'))]",
+            "tableName": "dbo.PowergridView",
+            "storageUri1": "[concat(parameters('storageBlobUrl'),'SignageDB.bacpac')]"
+        },
+        "location": "[resourceGroup().location]",
+        "baseUrl": "https://digitalsignagearm.blob.core.windows.net/rms-iot/",
+        "deploymentApiVersion": "2016-02-01",
+        "suffix": "[substring(uniqueString(resourceGroup().id), 0, 5)]",
+        "subId": "[subscription().subscriptionId]",
+        "rgName": "[resourceGroup().name]"
+    },
+    "resources": [
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "OMSWorkSpace",
+            "condition": "[equals(parameters('solutionType'),'solution with monitoring')]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/oms-workspace.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "omsSettings": {
+                        "value": "[variables('omsSettings')]"
+                    },
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "StorageSetup",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/storage-account.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "storageSettings": {
+                        "value": "[variables('storageSettings')]"
+                    },
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "IotHub",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/iot-hub.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "iotHubSettings": {
+                        "value": "[variables('iotHubSettings')]"
+                    },
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "AzureSqlServer",
+            "condition": "[and(equals(parameters('solutionType'),'solution with monitoring'), equals(parameters('costingModel'),'One'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "OMSWorkSpace"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/azure-sqlserver.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "azureSQL": {
+                        "value": "[variables('azureSQL')]"
+                    },
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "omsSettings": {
+                        "value": "[variables('omsSettings')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "AzureSqlServer2",
+            "condition": "[and(equals(parameters('solutionType'),'solution with monitoring'), equals(parameters('costingModel'),'Two'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "OMSWorkSpace"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/azure-sqlserver.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "azureSQL": {
+                        "value": "[variables('azureSQL')]"
+                    },
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "omsSettings": {
+                        "value": "[variables('omsSettings')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "AzureSqlServer3",
+            "condition": "[and(equals(parameters('solutionType'),'solution with monitoring'), equals(parameters('costingModel'),'Three'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "OMSWorkSpace"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/azure-sqlserver.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "azureSQL": {
+                        "value": "[variables('azureSQL')]"
+                    },
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "omsSettings": {
+                        "value": "[variables('omsSettings')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "azureSqlServerCore",
+            "condition": "[and(equals(parameters('solutionType'),'solution without monitoring'), equals(parameters('costingModel'),'One'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/azuresql-outmonitor.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "azureSQL": {
+                        "value": "[variables('azureSQL')]"
+                    },
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "azureSqlServerCore2",
+            "condition": "[and(equals(parameters('solutionType'),'solution without monitoring'), equals(parameters('costingModel'),'Two'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/azuresql-outmonitor.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "azureSQL": {
+                        "value": "[variables('azureSQL')]"
+                    },
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "azureSqlServerCore3",
+            "condition": "[and(equals(parameters('solutionType'),'solution without monitoring'), equals(parameters('costingModel'),'Three'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/azuresql-outmonitor.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "azureSQL": {
+                        "value": "[variables('azureSQL')]"
+                    },
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "sqlGeoReplication",
+            "condition": "[and(equals(parameters('solutionType'),'solution without monitoring'), equals(parameters('costingModel'),'Four'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/azure-georeplication.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "azureSQL": {
+                        "value": "[variables('azureSQL')]"
+                    },
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "sqlGeoReplicationmonitor",
+            "condition": "[and(equals(parameters('solutionType'),'solution with monitoring'), equals(parameters('costingModel'),'Four'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/sqlmonitor-georep.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "azureSQL": {
+                        "value": "[variables('azureSQL')]"
+                    },
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "omsSettings": {
+                        "value": "[variables('omsSettings')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "RunBook",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "StorageSetup"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/containers-runbook.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "automationSettings": {
+                        "value": "[variables('automationSettings')]"
+                    },
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "storageSettings": {
+                        "value": "[variables('storageSettings')]"
+                    },
+                    "storageAccountKey": {
+                        "value": "[reference('StorageSetup').outputs.primaryKey.value]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "IotHubOms",
+            "condition": "[equals(parameters('solutionType'),'solution with monitoring')]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "IotHub"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/iothub-oms.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "iotHubSettings": {
+                        "value": "[variables('iotHubSettings')]"
+                    },
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "omsSettings": {
+                        "value": "[variables('omsSettings')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "IotDps",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "IotHub"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/iot-dps.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "iotHubSettings": {
+                        "value": "[variables('iotHubSettings')]"
+                    },
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "iotDpsSettings": {
+                        "value": "[variables('iotDpsSettings')]"
+                    },
+                    "iotHubPrimaryKey": {
+                        "value": "[reference('IotHub').outputs.iotHubPrimaryKey.value]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "appInsights",
+            "condition": "[equals(parameters('solutionType'),'solution with monitoring')]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/app-insights.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "appInsights": {
+                        "value": "[variables('appInsights')]"
+                    },
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "AppComponentscosting1",
+            "condition": "[and(equals(parameters('solutionType'),'solution with monitoring'), equals(parameters('costingModel'),'One'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "AzureSqlServer",
+                "AzureSqlServer2",
+                "AzureSqlServer3",
+                "sqlGeoReplicationmonitor",
+                "OMSWorkSpace",
+                "StorageSetup",
+                "IotHub",
+                "IotDps"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/appplanf1-monitorapps.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "webSiteSettings": {
+                        "value": "[variables('webSiteSettings')]"
+                    },
+                    "storageSettings": {
+                        "value": "[variables('storageSettings')]"
+                    },
+                    "storageAccountKey": {
+                        "value": "[reference('StorageSetup').outputs.primaryKey.value]"
+                    },
+                    "iotHubSettings": {
+                        "value": "[variables('iotHubSettings')]"
+                    },
+                    "iotHubPrimaryKey": {
+                        "value": "[reference('IotHub').outputs.iotHubPrimaryKey.value]"
+                    },
+                    "omsSettings": {
+                        "value": "[variables('omsSettings')]"
+                    },
+                    "appInsights": {
+                        "value": "[variables('appInsights')]"
+                    },
+                    "iotHubEndPoint": {
+                        "value": "[reference('IotHub').outputs.iotHubEndPoint.value]"
+                    },
+                    "iotDpsPrimaryKey": {
+                        "value": "[reference('IotDps').outputs.iotDpsPrimaryKey.value]"
+                    },
+                    "iotDpsSettings": {
+                        "value": "[variables('iotDpsSettings')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    },
+                    "automationSettings": {
+                        "value": "[variables('automationSettings')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "AppComponentscosting2",
+            "condition": "[and(equals(parameters('solutionType'),'solution with monitoring'), equals(parameters('costingModel'),'Two'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "AzureSqlServer",
+                "AzureSqlServer2",
+                "AzureSqlServer3",
+                "sqlGeoReplicationmonitor",
+                "OMSWorkSpace",
+                "StorageSetup",
+                "IotHub",
+                "IotDps"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/app-componentscosting.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "webSiteSettings": {
+                        "value": "[variables('webSiteSettings')]"
+                    },
+                    "storageSettings": {
+                        "value": "[variables('storageSettings')]"
+                    },
+                    "storageAccountKey": {
+                        "value": "[reference('StorageSetup').outputs.primaryKey.value]"
+                    },
+                    "iotHubSettings": {
+                        "value": "[variables('iotHubSettings')]"
+                    },
+                    "iotHubPrimaryKey": {
+                        "value": "[reference('IotHub').outputs.iotHubPrimaryKey.value]"
+                    },
+                    "omsSettings": {
+                        "value": "[variables('omsSettings')]"
+                    },
+                    "appInsights": {
+                        "value": "[variables('appInsights')]"
+                    },
+                    "iotHubEndPoint": {
+                        "value": "[reference('IotHub').outputs.iotHubEndPoint.value]"
+                    },
+                    "iotDpsPrimaryKey": {
+                        "value": "[reference('IotDps').outputs.iotDpsPrimaryKey.value]"
+                    },
+                    "iotDpsSettings": {
+                        "value": "[variables('iotDpsSettings')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    },
+                    "automationSettings": {
+                        "value": "[variables('automationSettings')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "AppComponentscosting3",
+            "condition": "[and(equals(parameters('solutionType'),'solution with monitoring'), equals(parameters('costingModel'),'Three'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "AzureSqlServer",
+                "AzureSqlServer2",
+                "AzureSqlServer3",
+                "sqlGeoReplicationmonitor",
+                "OMSWorkSpace",
+                "StorageSetup",
+                "IotHub",
+                "IotDps"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/app-componentscosting.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "webSiteSettings": {
+                        "value": "[variables('webSiteSettings')]"
+                    },
+                    "storageSettings": {
+                        "value": "[variables('storageSettings')]"
+                    },
+                    "storageAccountKey": {
+                        "value": "[reference('StorageSetup').outputs.primaryKey.value]"
+                    },
+                    "iotHubSettings": {
+                        "value": "[variables('iotHubSettings')]"
+                    },
+                    "iotHubPrimaryKey": {
+                        "value": "[reference('IotHub').outputs.iotHubPrimaryKey.value]"
+                    },
+                    "omsSettings": {
+                        "value": "[variables('omsSettings')]"
+                    },
+                    "appInsights": {
+                        "value": "[variables('appInsights')]"
+                    },
+                    "iotHubEndPoint": {
+                        "value": "[reference('IotHub').outputs.iotHubEndPoint.value]"
+                    },
+                    "iotDpsPrimaryKey": {
+                        "value": "[reference('IotDps').outputs.iotDpsPrimaryKey.value]"
+                    },
+                    "iotDpsSettings": {
+                        "value": "[variables('iotDpsSettings')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    },
+                    "automationSettings": {
+                        "value": "[variables('automationSettings')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "AppComponents",
+            "condition": "[and(equals(parameters('solutionType'),'solution with monitoring'), equals(parameters('costingModel'),'Four'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "AzureSqlServer",
+                "AzureSqlServer2",
+                "AzureSqlServer3",
+                "sqlGeoReplicationmonitor",
+                "OMSWorkSpace",
+                "StorageSetup",
+                "IotHub",
+                "IotDps"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/app-components.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "webSiteSettings": {
+                        "value": "[variables('webSiteSettings')]"
+                    },
+                    "storageSettings": {
+                        "value": "[variables('storageSettings')]"
+                    },
+                    "storageAccountKey": {
+                        "value": "[reference('StorageSetup').outputs.primaryKey.value]"
+                    },
+                    "iotHubSettings": {
+                        "value": "[variables('iotHubSettings')]"
+                    },
+                    "iotHubPrimaryKey": {
+                        "value": "[reference('IotHub').outputs.iotHubPrimaryKey.value]"
+                    },
+                    "omsSettings": {
+                        "value": "[variables('omsSettings')]"
+                    },
+                    "appInsights": {
+                        "value": "[variables('appInsights')]"
+                    },
+                    "iotHubEndPoint": {
+                        "value": "[reference('IotHub').outputs.iotHubEndPoint.value]"
+                    },
+                    "iotDpsPrimaryKey": {
+                        "value": "[reference('IotDps').outputs.iotDpsPrimaryKey.value]"
+                    },
+                    "iotDpsSettings": {
+                        "value": "[variables('iotDpsSettings')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    },
+                    "automationSettings": {
+                        "value": "[variables('automationSettings')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "AppComponentsDr",
+            "condition": "[and(equals(parameters('solutionType'),'solution with monitoring'), equals(parameters('costingModel'),'Four'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "AzureSqlServer",
+                "AzureSqlServer2",
+                "AzureSqlServer3",
+                "sqlGeoReplicationmonitor",
+                "OMSWorkSpace",
+                "StorageSetup",
+                "IotHub",
+                "IotDps"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/appdr-components.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "webSiteSettings": {
+                        "value": "[variables('webSiteSettings')]"
+                    },
+                    "storageSettings": {
+                        "value": "[variables('storageSettings')]"
+                    },
+                    "storageAccountKey": {
+                        "value": "[reference('StorageSetup').outputs.primaryKey.value]"
+                    },
+                    "iotHubSettings": {
+                        "value": "[variables('iotHubSettings')]"
+                    },
+                    "iotHubPrimaryKey": {
+                        "value": "[reference('IotHub').outputs.iotHubPrimaryKey.value]"
+                    },
+                    "omsSettings": {
+                        "value": "[variables('omsSettings')]"
+                    },
+                    "appInsights": {
+                        "value": "[variables('appInsights')]"
+                    },
+                    "iotHubEndPoint": {
+                        "value": "[reference('IotHub').outputs.iotHubEndPoint.value]"
+                    },
+                    "iotDpsPrimaryKey": {
+                        "value": "[reference('IotDps').outputs.iotDpsPrimaryKey.value]"
+                    },
+                    "iotDpsSettings": {
+                        "value": "[variables('iotDpsSettings')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    },
+                    "automationSettings": {
+                        "value": "[variables('automationSettings')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "appComponentsCorecosting1",
+            "condition": "[and(equals(parameters('solutionType'),'solution without monitoring'), equals(parameters('costingModel'),'One'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "azureSqlServerCore",
+                "azureSqlServerCore2",
+                "azureSqlServerCore3",
+                "sqlGeoReplication",
+                "StorageSetup",
+                "IotHub",
+                "IotDps"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/appplanf1-outmonitorapps.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "webSiteSettings": {
+                        "value": "[variables('webSiteSettings')]"
+                    },
+                    "storageSettings": {
+                        "value": "[variables('storageSettings')]"
+                    },
+                    "storageAccountKey": {
+                        "value": "[reference('StorageSetup').outputs.primaryKey.value]"
+                    },
+                    "iotHubSettings": {
+                        "value": "[variables('iotHubSettings')]"
+                    },
+                    "iotHubPrimaryKey": {
+                        "value": "[reference('IotHub').outputs.iotHubPrimaryKey.value]"
+                    },
+                    "iotHubEndPoint": {
+                        "value": "[reference('IotHub').outputs.iotHubEndPoint.value]"
+                    },
+                    "iotDpsPrimaryKey": {
+                        "value": "[reference('IotDps').outputs.iotDpsPrimaryKey.value]"
+                    },
+                    "iotDpsSettings": {
+                        "value": "[variables('iotDpsSettings')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    },
+                    "automationSettings": {
+                        "value": "[variables('automationSettings')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "appComponentsCorecosting2",
+            "condition": "[and(equals(parameters('solutionType'),'solution without monitoring'), equals(parameters('costingModel'),'Two'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "azureSqlServerCore",
+                "azureSqlServerCore2",
+                "azureSqlServerCore3",
+                "sqlGeoReplication",
+                "StorageSetup",
+                "IotHub",
+                "IotDps"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/apps-outmonitorcosting.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "webSiteSettings": {
+                        "value": "[variables('webSiteSettings')]"
+                    },
+                    "storageSettings": {
+                        "value": "[variables('storageSettings')]"
+                    },
+                    "storageAccountKey": {
+                        "value": "[reference('StorageSetup').outputs.primaryKey.value]"
+                    },
+                    "iotHubSettings": {
+                        "value": "[variables('iotHubSettings')]"
+                    },
+                    "iotHubPrimaryKey": {
+                        "value": "[reference('IotHub').outputs.iotHubPrimaryKey.value]"
+                    },
+                    "iotHubEndPoint": {
+                        "value": "[reference('IotHub').outputs.iotHubEndPoint.value]"
+                    },
+                    "iotDpsPrimaryKey": {
+                        "value": "[reference('IotDps').outputs.iotDpsPrimaryKey.value]"
+                    },
+                    "iotDpsSettings": {
+                        "value": "[variables('iotDpsSettings')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    },
+                    "automationSettings": {
+                        "value": "[variables('automationSettings')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "appComponentsCorecosting3",
+            "condition": "[and(equals(parameters('solutionType'),'solution without monitoring'), equals(parameters('costingModel'),'Three'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "azureSqlServerCore",
+                "azureSqlServerCore2",
+                "azureSqlServerCore3",
+                "sqlGeoReplication",
+                "StorageSetup",
+                "IotHub",
+                "IotDps"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/apps-outmonitorcosting.json','?token=AYpAeHy3xj1Ye7viOfdJucgfCVisRzoyks5azZP6wA%3D%3D')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "webSiteSettings": {
+                        "value": "[variables('webSiteSettings')]"
+                    },
+                    "storageSettings": {
+                        "value": "[variables('storageSettings')]"
+                    },
+                    "storageAccountKey": {
+                        "value": "[reference('StorageSetup').outputs.primaryKey.value]"
+                    },
+                    "iotHubSettings": {
+                        "value": "[variables('iotHubSettings')]"
+                    },
+                    "iotHubPrimaryKey": {
+                        "value": "[reference('IotHub').outputs.iotHubPrimaryKey.value]"
+                    },
+                    "iotHubEndPoint": {
+                        "value": "[reference('IotHub').outputs.iotHubEndPoint.value]"
+                    },
+                    "iotDpsPrimaryKey": {
+                        "value": "[reference('IotDps').outputs.iotDpsPrimaryKey.value]"
+                    },
+                    "iotDpsSettings": {
+                        "value": "[variables('iotDpsSettings')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    },
+                    "automationSettings": {
+                        "value": "[variables('automationSettings')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "appComponentsCore",
+            "condition": "[and(equals(parameters('solutionType'),'solution without monitoring'), equals(parameters('costingModel'),'Four'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "azureSqlServerCore",
+                "azureSqlServerCore2",
+                "azureSqlServerCore3",
+                "sqlGeoReplication",
+                "StorageSetup",
+                "IotHub",
+                "IotDps"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/apps-outmonitor.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "webSiteSettings": {
+                        "value": "[variables('webSiteSettings')]"
+                    },
+                    "storageSettings": {
+                        "value": "[variables('storageSettings')]"
+                    },
+                    "storageAccountKey": {
+                        "value": "[reference('StorageSetup').outputs.primaryKey.value]"
+                    },
+                    "iotHubSettings": {
+                        "value": "[variables('iotHubSettings')]"
+                    },
+                    "iotHubPrimaryKey": {
+                        "value": "[reference('IotHub').outputs.iotHubPrimaryKey.value]"
+                    },
+                    "iotHubEndPoint": {
+                        "value": "[reference('IotHub').outputs.iotHubEndPoint.value]"
+                    },
+                    "iotDpsPrimaryKey": {
+                        "value": "[reference('IotDps').outputs.iotDpsPrimaryKey.value]"
+                    },
+                    "iotDpsSettings": {
+                        "value": "[variables('iotDpsSettings')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    },
+                    "automationSettings": {
+                        "value": "[variables('automationSettings')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "appComponentsCoreDr",
+            "condition": "[and(equals(parameters('solutionType'),'solution without monitoring'), equals(parameters('costingModel'),'Four'))]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "azureSqlServerCore",
+                "azureSqlServerCore2",
+                "azureSqlServerCore3",
+                "sqlGeoReplication",
+                "StorageSetup",
+                "IotHub",
+                "IotDps"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/appsdr-outmonitor.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "webSiteSettings": {
+                        "value": "[variables('webSiteSettings')]"
+                    },
+                    "storageSettings": {
+                        "value": "[variables('storageSettings')]"
+                    },
+                    "storageAccountKey": {
+                        "value": "[reference('StorageSetup').outputs.primaryKey.value]"
+                    },
+                    "iotHubSettings": {
+                        "value": "[variables('iotHubSettings')]"
+                    },
+                    "iotHubPrimaryKey": {
+                        "value": "[reference('IotHub').outputs.iotHubPrimaryKey.value]"
+                    },
+                    "iotHubEndPoint": {
+                        "value": "[reference('IotHub').outputs.iotHubEndPoint.value]"
+                    },
+                    "iotDpsPrimaryKey": {
+                        "value": "[reference('IotDps').outputs.iotDpsPrimaryKey.value]"
+                    },
+                    "iotDpsSettings": {
+                        "value": "[variables('iotDpsSettings')]"
+                    },
+                    "costingModel": {
+                        "value": "[parameters('costingModel')]"
+                    },
+                    "costingOne": {
+                        "value": "[variables('costingOne')]"
+                    },
+                    "costingTwo": {
+                        "value": "[variables('costingTwo')]"
+                    },
+                    "costingThree": {
+                        "value": "[variables('costingThree')]"
+                    },
+                    "costingFour": {
+                        "value": "[variables('costingFour')]"
+                    },
+                    "automationSettings": {
+                        "value": "[variables('automationSettings')]"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "name": "TrafficManagerApps",
+            "condition": "[equals(parameters('costingModel'),'Four')]",
+            "apiVersion": "[variables('deploymentApiVersion')]",
+            "dependsOn": [
+                "appComponentsCore",
+                "appComponentsCoreDr",
+                "AppComponents",
+                "AppComponentsDr"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(variables('baseUrl'), 'nested/traffic-managerapps.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "apiVersions": {
+                        "value": "[variables('apiVersions')]"
+                    },
+                    "webSiteSettings": {
+                        "value": "[variables('webSiteSettings')]"
+                    },
+                    "trafficManagerSettings": {
+                        "value": "[variables('trafficManagerSettings')]"
+                    }
+                }
+            }
+        }
+    ],
+    "outputs": {
+        "azureSQLUsername": {
+            "type": "string",
+            "value": "[parameters('sqlAdministratorLogin')]"
+        },
+        "azureSqlPassword": {
+            "type": "string",
+            "value": "Enter the sqlAdministratorLoginPassword which you have enetered in parameter section while deploying the template."
+        },
+        "destinationStorageAccountName": {
+            "type": "string",
+            "value": "[variables('storageSettings').storageAccountName]"
+        },
+        "webAppUrl": {
+            "type": "string",
+            "value": "[concat('https://',variables('webSiteSettings').webSiteName,'.azurewebsites.net/')]"
+        },
+        "nodeServerUrl": {
+            "type": "string",
+            "value": "[concat('https://',variables('webSiteSettings').nodeServerName,'.azurewebsites.net/')]"
+        },
+        "trafficManagerWebAppUrl": {
+            "type": "string",
+            "value": "[concat('https://',variables('trafficManagerSettings').trafficManagerName,'.trafficmanager.net')]"
+        },
+        "trafficManagerNodeServerUrl": {
+            "type": "string",
+            "value": "[concat('https://',variables('trafficManagerSettings').trafficManagerName1,'.trafficmanager.net')]"
+        },
+        "webJobUrl": {
+            "type": "string",
+            "value": "[concat('https://',variables('webSiteSettings').signageServerName,'.scm.','.azurewebsites.net/','/azurejobs/')]"
+        },
+        "iotHubEndPoint": {
+            "type": "string",
+            "value": "[reference('IotHub').outputs.iotHubEndPoint.value]"
+        },
+        "omsLogAnalyticsUrl": {
+            "type": "string",
+            "value": "[concat('https://',variables('omsSettings').omsWorkspaceName,'.portal.mms.microsoft.com/')]"
+        },
+        "appInsightsUrl": {
+            "type": "string",
+            "value": "[concat('https://analytics.applicationinsights.io/subscriptions/',variables('subId'),'/resourcegroups/',variables('rgName'),'/components/',variables('appInsights').appInsightResourceName,'#/')]"
+        },
+        "iotDpsGlobalEndPoint": {
+            "type": "string",
+            "value": "global.azure-devices-provisioning.net"
+        },
+        "iotDpsServerEndPoint": {
+            "type": "string",
+            "value": "[concat(variables('iotDpsSettings').iotDpsName,'.azure-devices-provisioning.net')]"
+        },
+        "iotDpsIdScope": {
+            "type": "string",
+            "value": "[reference('IotDps').outputs.iotDpsIdScope.value]"
+        }
+    }
+}

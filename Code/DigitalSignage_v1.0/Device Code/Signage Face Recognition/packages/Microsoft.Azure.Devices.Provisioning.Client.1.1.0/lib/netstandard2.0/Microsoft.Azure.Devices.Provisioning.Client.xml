@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Azure.Devices.Provisioning.Client</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.DeviceRegistrationResult">
+            <summary>
+            The result of a registration operation.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.DeviceRegistrationResult.#ctor(System.String,System.Nullable{System.DateTime},System.String,System.String,Microsoft.Azure.Devices.Provisioning.Client.ProvisioningRegistrationStatusType,System.String,System.Nullable{System.DateTime},System.Int32,System.String,System.String)">
+            <summary>
+            Used internally by the SDK to create a new instance of the DeviceRegistrationResult class.
+            This constructor is exposed to allow serialization and unit testing of applications using this SDK.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.DeviceRegistrationResult.RegistrationId">
+            <summary>
+            The registration id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.DeviceRegistrationResult.CreatedDateTimeUtc">
+            <summary>
+            The time when the device originally registered with the service.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.DeviceRegistrationResult.AssignedHub">
+            <summary>
+            The assigned Azure IoT Hub.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.DeviceRegistrationResult.DeviceId">
+            <summary>
+            The Device ID.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.DeviceRegistrationResult.Status">
+            <summary>
+            The status of the operation.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.DeviceRegistrationResult.GenerationId">
+            <summary>
+            The generation ID.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.DeviceRegistrationResult.LastUpdatedDateTimeUtc">
+            <summary>
+            The time when the device last refreshed the registration.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.DeviceRegistrationResult.ErrorCode">
+            <summary>
+            Error code.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.DeviceRegistrationResult.ErrorMessage">
+            <summary>
+            Error message.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.DeviceRegistrationResult.Etag">
+            <summary>
+            The Etag.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningDeviceClient">
+            <summary>
+            Allows devices to use the Device Provisioning Service.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningDeviceClient.ProductInfo">
+            <summary>
+            Stores product information that will be appended to the user agent string that is sent to IoT Hub.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningDeviceClient.Create(System.String,System.String,Microsoft.Azure.Devices.Shared.SecurityProvider,Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportHandler)">
+            <summary>
+            Creates an instance of the Device Provisioning Client.
+            </summary>
+            <param name="globalDeviceEndpoint">The GlobalDeviceEndpoint for the Device Provisioning Service.</param>
+            <param name="idScope">The IDScope for the Device Provisioning Service.</param>
+            <param name="securityProvider">The security provider instance.</param>
+            <param name="transport">The type of transport (e.g. HTTP, AMQP, MQTT).</param>
+            <returns>An instance of the ProvisioningDeviceClient</returns>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningDeviceClient.RegisterAsync">
+            <summary>
+            Registers the current device using the Device Provisioning Service and assigns it to an IoT Hub.
+            </summary>
+            <returns>The registration result.</returns>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningDeviceClient.RegisterAsync(System.Threading.CancellationToken)">
+            <summary>
+            Registers the current device using the Device Provisioning Service and assigns it to an IoT Hub.
+            </summary>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The registration result.</returns>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningRegistrationStatusType">
+            <summary>
+            The provisioning status type.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningRegistrationStatusType.Unassigned">
+            <summary>
+            Device has not yet come on-line
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningRegistrationStatusType.Assigning">
+            <summary>
+            Device has connected to the DRS but IoT Hub ID has not yet been returned to the device
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningRegistrationStatusType.Assigned">
+            <summary>
+            DRS successfully returned a device ID and connection string to the device
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningRegistrationStatusType.Failed">
+            <summary>
+            Device enrollment failed
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningRegistrationStatusType.Disabled">
+            <summary>
+            Device is disabled
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningTransportException">
+            <summary>
+            Represents errors reported by the Provisioning Transport Handlers.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningTransportException.IsTransient">
+            <summary>
+            If true, the error is transient and the application should retry at a later time.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningTransportException.TrackingId">
+            <summary>
+            Service reported Tracking ID. Use this when reporting a Service issue.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningTransportException.#ctor">
+            <summary>
+            Creates a new instance of the ProvisioningTransportException class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningTransportException.#ctor(System.Exception)">
+            <summary>
+            Creates a new instance of the ProvisioningTransportException class.
+            </summary>
+            <param name="innerException">The inner exception.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningTransportException.#ctor(System.String)">
+            <summary>
+            Creates a new instance of the ProvisioningTransportException class.
+            </summary>
+            <param name="message">The exception message.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningTransportException.#ctor(System.String,System.Exception)">
+            <summary>
+            Creates a new instance of the ProvisioningTransportException class.
+            </summary>
+            <param name="message">The exception message.</param>
+            <param name="innerException">The inner exception.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningTransportException.#ctor(System.String,System.Exception,System.Boolean)">
+            <summary>
+            Creates a new instance of the ProvisioningTransportException class.
+            </summary>
+            <param name="message">The exception message.</param>
+            <param name="isTransient">True if the error is transient.</param>
+            <param name="innerException">The inner exception.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningTransportException.#ctor(System.String,System.Exception,System.Boolean,System.String)">
+            <summary>
+            Creates a new instance of the ProvisioningTransportException class.
+            </summary>
+            <param name="message">The exception message.</param>
+            <param name="isTransient">True if the error is transient.</param>
+            <param name="trackingId">The service tracking ID.</param>
+            <param name="innerException">The inner exception.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningTransportException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Creates a new instance of the ProvisioningTransportException class.
+            </summary>
+            <param name="info">The SerializationInfo that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The StreamingContext that contains contextual information about the source or destination.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.ProvisioningTransportException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the SerializationInfo with information about the exception.
+            </summary>
+            <param name="info">The SerializationInfo that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The StreamingContext that contains contextual information about the source or destination.</param>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportHandler">
+            <summary>
+            Represents the interface for a Provisioning Transport Handler.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportHandler.#ctor">
+            <summary>
+            Creates an instance of the ProvisioningTransportHandler class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportHandler.InnerHandler">
+            <summary>
+            Gets or sets the inner handler.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportHandler.Port">
+            <summary>
+            Gets or sets the port number.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportHandler.RegisterAsync(Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportRegisterMessage,System.Threading.CancellationToken)">
+            <summary>
+            Registers a device described by the message.
+            </summary>
+            <param name="message">The provisioning message.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The registration result.</returns>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportHandler.Dispose(System.Boolean)">
+            <summary>
+            Releases the unmanaged resources used by the ProvisioningTransportHandler and optionally disposes of the managed resources.
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to releases only unmanaged resources.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportHandler.Dispose">
+            <summary>
+            Releases the unmanaged resources and disposes of the managed resources used by the invoker.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportRegisterMessage">
+            <summary>
+            Represents a Provisioning registration message.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportRegisterMessage.GlobalDeviceEndpoint">
+            <summary>
+            The Global Device Endpoint for this message.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportRegisterMessage.IdScope">
+            <summary>
+            The IDScope for this message.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportRegisterMessage.Security">
+            <summary>
+            The SecurityProvider used to authenticate the client.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportRegisterMessage.ProductInfo">
+            <summary>
+            The Product Information sent to the Provisioning Service. The application can specify extra information.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportRegisterMessage.#ctor(System.String,System.String,Microsoft.Azure.Devices.Shared.SecurityProvider)">
+            <summary>
+            Creates a new instance of the ProvisioningTransportRegisterMessage class.
+            </summary>
+            <param name="globalDeviceEndpoint">The Global Device Endpoint for this message.</param>
+            <param name="idScope">The IDScope for this message.</param>
+            <param name="security">The SecurityProvider used to authenticate the client.</param>
+        </member>
+        <member name="F:Microsoft.Azure.Devices.Shared.Logging.Log">
+            <summary>The single event source instance to use for all logging.</summary>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Enter(System.Object,System.FormattableString,System.String)">
+            <summary>Logs entrance to a method.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="formattableString">A description of the entrance, including any arguments to the call.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Enter(System.Object,System.Object,System.String)">
+            <summary>Logs entrance to a method.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="arg0">The object to log.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Enter(System.Object,System.Object,System.Object,System.String)">
+            <summary>Logs entrance to a method.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="arg0">The first object to log.</param>
+            <param name="arg1">The second object to log.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Enter(System.Object,System.Object,System.Object,System.Object,System.String)">
+            <summary>Logs entrance to a method.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="arg0">The first object to log.</param>
+            <param name="arg1">The second object to log.</param>
+            <param name="arg2">The third object to log.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Exit(System.Object,System.FormattableString,System.String)">
+            <summary>Logs exit from a method.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="formattableString">A description of the exit operation, including any return values.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Exit(System.Object,System.Object,System.String)">
+            <summary>Logs exit from a method.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="arg0">A return value from the member.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Exit(System.Object,System.Object,System.Object,System.String)">
+            <summary>Logs exit from a method.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="arg0">A return value from the member.</param>
+            <param name="arg1">A second return value from the member.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Info(System.Object,System.FormattableString,System.String)">
+            <summary>Logs an information message.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="formattableString">The message to be logged.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Info(System.Object,System.Object,System.String)">
+            <summary>Logs an information message.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="message">The message to be logged.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Error(System.Object,System.FormattableString,System.String)">
+            <summary>Logs an error message.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="formattableString">The message to be logged.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Error(System.Object,System.Object,System.String)">
+            <summary>Logs an error message.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="message">The message to be logged.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Fail(System.Object,System.FormattableString,System.String)">
+            <summary>Logs a fatal error and raises an assert.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="formattableString">The message to be logged.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Fail(System.Object,System.Object,System.String)">
+            <summary>Logs a fatal error and raises an assert.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="message">The message to be logged.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.DumpBuffer(System.Object,System.Byte[],System.String)">
+            <summary>Logs the contents of a buffer.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="buffer">The buffer to be logged.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.DumpBuffer(System.Object,System.Byte[],System.Int32,System.Int32,System.String)">
+            <summary>Logs the contents of a buffer.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="buffer">The buffer to be logged.</param>
+            <param name="offset">The starting offset from which to log.</param>
+            <param name="count">The number of bytes to log.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.DumpBuffer(System.Object,System.IntPtr,System.Int32,System.String)">
+            <summary>Logs the contents of a buffer.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="bufferPtr">The starting location of the buffer to be logged.</param>
+            <param name="count">The number of bytes to log.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Associate(System.Object,System.Object,System.String)">
+            <summary>Logs a relationship between two objects.</summary>
+            <param name="first">The first object.</param>
+            <param name="second">The second object.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Devices.Shared.Logging.Associate(System.Object,System.Object,System.Object,System.String)">
+            <summary>Logs a relationship between two objects.</summary>
+            <param name="thisOrContextObject">`this`, or another object that serves to provide context for the operation.</param>
+            <param name="first">The first object.</param>
+            <param name="second">The second object.</param>
+            <param name="memberName">The calling member.</param>
+        </member>
+    </members>
+</doc>

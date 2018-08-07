@@ -1,0 +1,15 @@
+[Log Starts]
+2018-01-23 11:54:39,649 [WIPRO\RE246339] - System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at Microsoft.Azure.Devices.AmqpFeedbackReceiver.<ReceiveAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at SchedulerConsole.SendCloudToDevice.<ReceiveFeedbackAsync>d__8.MoveNext() in f:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\SendCloudToDevice.cs:line 67
+2018-01-23 11:54:40,644 [WIPRO\RE246339] - System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at Microsoft.Azure.Devices.AmqpServiceClient.<SendAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at SchedulerConsole.SendCloudToDevice.<SendCloudToDeviceMessageAsync>d__0.MoveNext() in f:\Back Up Remil\Remil\IOT\MS Accelerator\Dev\NewStick\Scheduler Oct28Final\SchedulerConsole2.6\SchedulerConsole2.6\SchedulerConsole\SendCloudToDevice.cs:line 49

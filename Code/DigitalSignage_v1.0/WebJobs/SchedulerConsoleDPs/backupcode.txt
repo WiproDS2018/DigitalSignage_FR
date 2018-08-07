@@ -1,0 +1,32 @@
+
+            //Console.WriteLine(localDate.ToString());
+            /*string connectionString = ConfigurationManager.ConnectionStrings["SchedulerConsole.Properties.Settings.SchedulerConnectionString"].ConnectionString;
+            SqlConnection connection;
+            using (connection = new SqlConnection(connectionString))
+            using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM SCHEDULES", connection))
+            {
+                DataTable ScheduleTable = new DataTable();
+                adapter.Fill(ScheduleTable);
+                DateTime localDate = DateTime.Now;
+                string date = localDate.ToString();
+                Console.WriteLine(date);
+                foreach (DataRow dataRow in ScheduleTable.Rows)
+                {
+                    string start = dataRow["Start"].ToString();
+                    string end = dataRow["End"].ToString();
+                    Console.WriteLine(start);
+                    Console.WriteLine(end);
+                    string id = dataRow["DeviceId"].ToString();
+                    int c1 = date.CompareTo(start);
+                    int c2 = date.CompareTo(end);
+                    if(c1>=0 && c2<=0)
+                    {
+                        Console.WriteLine(id);
+                    }
+                    //Console.WriteLine(id);
+                    /*foreach (var item in dataRow.ItemArray)
+                    {
+                        Console.WriteLine(item);
+                    }
+                    */
+                }

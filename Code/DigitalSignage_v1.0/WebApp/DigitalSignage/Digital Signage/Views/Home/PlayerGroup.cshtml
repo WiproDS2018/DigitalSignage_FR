@@ -1,0 +1,186 @@
+﻿
+
+<div class="container-fluid ms_root" ng-controller="PlayerGroupController">
+    <div class="clearfix"></div>
+    @* Left Side Content *@
+    <div class="col-md-3 col-sm-4 col-xs-12 col-lg-2">
+        <div class="lftmenu_mas">
+            <span class="col-xs-3 lftbox"><img src="~/Images/Players.svg" /></span>
+            <div class="col-xs-8 col-sm-10 subMenuMobi" id="MainMenu">
+                <div class="list-group panel">
+                    <a href="#" class="list-group-item list-group-item-success" ng-click="newGroup()">Create Device Group</a>
+                    <a href="#" class="list-group-item list-group-item-success" ng-click="getAllPlayerGroup()">View Device Group</a>
+                    <a href="#" class="list-group-item list-group-item-success" ng-click="assignPlayer()">Assign Devices
+                        <div ng-show="chckBoxforAssignPlayer" ng-cloak>
+                            <span ng-class={{"!chckBox?'':'halert'"}} class="alrtTxtWarning">{{assignMsg}}</span>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-success" ng-click="rmGroupData()">
+                        Remove Sub Group
+                        <div ng-show="chckBoxMsgForGrp" ng-cloak>
+                            <span ng-class={{"!chckBox?'':'halert'"}} class="alrtTxtWarning"> Select the Group to Delete !</span>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-success" ng-click="reloadPage()">Reload</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Rightside Content Started *@
+    <div class="col-md-9 col-sm-8 col-xs-12 col-lg-10 rgtSide1" ng-cloak>
+        <h1>Device Sub Group<span class="sub_title" ng-cloak>{{subTitle}}</span></h1>
+        <p class="cont1">
+            Devices are HDMI IoT sticks that are plugged into devices, like monitors, projectors or televisions, located at locations that content display on within a playlist.
+        </p>
+    </div>
+
+    @*Creating New plAYER group by prodipta  *@
+    <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 rgtSide2 upload" ng-show="aNGroup" ng-cloak>
+        <form role="form" class="ng-pristine ng-valid" id="playerFormData">
+            <div class="form-group">
+                <fieldset>
+                    <label for="GroupName">Sub Group Name</label>
+                    <input class="form-control" type="text" ng-model="Group.groupName" id="GroupName" name="GroupName" />
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <label for="GroupDescription">Sub Group Description</label>
+                    <input class="form-control" type="text" ng-model="Group.groupDescription" id="GroupDescription" name="GroupDescription" />
+                </fieldset>
+            </div>
+            <div class="form-group flt_rgt">
+                <button type="submit" class="btn btn-submit1 " ng-click="addGroup();">Save</button>
+                <button type="button" class="btn btn-submit1 " ng-click="cancFun()">Cancel</button>
+            </div>
+        </form>
+        <div class="alert" ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="success">
+            <span>{{msg}}</span>
+        </div>
+    </div>
+    @* ended by prodipta *@
+
+    @* Right side Code started *@
+    @* Player Group view table start by prodipta *@
+    <div class="col-md-9 col-sm-8 col-xs-12 col-lg-10 rgtSide2" ng-init="getAllGroupPlayer()" ng-show="GroupTableVisibility" ng-cloak>
+        <div class="rgttbl plyr1">
+            <table class="table table-striped dtbl">
+                <colgroup>
+                    <col width="50" />
+                    <col width="" />
+                    <col width="" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th ng-click="sortBy('GroupName')">
+                            Sub Group Name
+                            <span class="sortorder" ng-show="propertyName === 'GroupName'" ng-class="{reverse: reverse}"></span>
+                        </th>
+                        <th ng-click="sortBy('GroupDescription')">
+                            Sub Group Description
+                            <span class="sortorder" ng-show="propertyName === 'GroupDescription'" ng-class="{reverse: reverse}"></span>
+                        </th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd" ng-show="model.PlayerGroupTable.length == 0">
+                        <td valign="top" colspan="4" class="dataTables_empty">No data available in table</td>
+                    </tr>
+                    <tr ng-repeat="PlayerGroup in model.PlayerGroupTable.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) | orderBy:propertyName:reverse" ng-include="getTemplateForGroup(PlayerGroup)">
+                        <td>{{$index+1}}</td>
+                        <td>{{PlayerGroup.GroupName}}</td>
+                        <td>{{PlayerGroup.GroupDescription}}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- pagination started  -->
+            <div class="pagiAlign">
+                <div class="pagiCombo">
+                    Show <select ng-options="item as item for item in dDownValues" ng-model="viewby" ng-change="setItemsPerPage(viewby)"></select>
+                </div>
+                <div class="numTabi">
+                    <ul uib-pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" num-pages="numPages" class="pagination-sm" boundary-links="true" items-per-page="itemsPerPage" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></ul>
+                </div>
+                <div class="txtPgi">
+                    Showing page {{currentPage}} of {{numPages}}
+                </div>
+            </div>
+            @* Pagination ended *@
+            @* Edit Player group *@
+            <script type="text/ng-template" id="displayGroup">
+                <td><input type="checkbox" id={{PlayerGroup.GroupId}} ng-click="vmPGroup.myClick($index, PlayerGroup.GroupId, PlayerGroup.GroupName, PlayerGroup.GroupDescription,PlayerGroup)" /></td>
+                <td class="username"><span class="username">{{PlayerGroup.GroupName}}</span></td>
+                <td>{{PlayerGroup.GroupDescription}}</td>
+                <td ng-click="editPlayerGroup(PlayerGroup)">
+                    <a class="edit_btn_align"><img src="../../Images/edit.png" /></a>
+                </td>
+            </script>
+
+            <script type="text/ng-template" id="editGroup">
+                <td><input type="checkbox" id={{$index}} ng-click="vmPGroup.myClick(model.selected.GroupId,$index,  model.selected.GroupName, model.selected.GroupDescription)" /></td>
+                <td><input type="text" ng-model="model.selected.GroupName" /></td>
+                <td><input type="text" ng-model="model.selected.GroupDescription" /></td>
+                <td>
+                    <a class="save_btn_align" ng-click="saveplayerGroup($index, model.selected.GroupId, model.selected.GroupName, model.selected.GroupDescription)"><img src="../../Images/save_icon.png" /></a>
+                    <a class="cancel_btn_align" ng-click="reset()"><img src="../../Images/cancel_icon.png" /></a>
+                </td>
+            </script>
+            @* Edit player group End *@
+        </div>
+        <div class="alert" ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="editsuccess">
+            <span>{{editMsg}}</span>
+        </div>        
+    </div>
+
+    @* Assign Playergroup started *@
+    <div class="col-md-9 col-sm-8 col-xs-12 col-lg-10 rgtSide1" ng-show="assnStation" ng-cloak>
+        <div id="fluid" class="dd_top_align">
+            <div ng-repeat="(listName, list) in models.lists" class="col-sm-12 col-xs-12 col-md-4 mar_lft0">
+                <div class="panel panel-info dd">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">List {{listName}} &nbsp; --> <span class="ddClass">{{grpName}}</span></h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul dnd-list="list">
+                            <li ng-repeat="item in list"
+                                dnd-draggable="item"
+                                dnd-moved="list.splice($index, 1)"
+                                dnd-effect-allowed="move"
+                                dnd-selected="models.selected = item"
+                                ng-class="{'selected': models.selected === item}">                               
+
+                                <div class="accordion__container1">
+                                    <div class="accordion__tab">
+                                        <div class="accordion__tab-title" ng-click="openTab(item)">
+                                            {{item.PlayerName}}
+                                        </div>                                         
+                                    </div>
+                                </div>  
+                            </li>
+                            <p>&nbsp;</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12">
+            Note: "You can drag and drop from list of Available Devices to Selected Device list for selecting it "
+        </div>
+        <div class="col-lg-12 btnGlbAlign">
+            <button type="button" class="btn btn-submit1" ng-click="ddSave()">Save</button>
+            <button type="button" class="btn btn-submit1" ng-click="ddRestore()">Reset</button>
+            <button type="button" class="btn btn-submit1" ng-click="cancFun()">Cancel</button>
+        </div>
+        <div class="alert" ng-class="res.data == 'sucess'?'alrtTxtSuccess':'failMsg'" id="editsuccess">
+            <span>{{editMsg}}</span>
+        </div>
+    </div>
+    @* Assign Playergroup ended  *@
+    @* Right side code ended *@
+
+</div>

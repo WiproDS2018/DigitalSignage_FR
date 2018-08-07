@@ -1,0 +1,142 @@
+﻿
+
+@*Player cshtml inherits _LayoutTable.cshtml ._Layout act as a master page .Menu.Header,Footer needs to placed on Layout  Page- Remil *@
+
+<div class="container-fluid ms_root" ng-controller="PlayerController">
+    <div class="clearfix"></div>
+    @* Left Side Content *@
+    <div class="col-md-3 col-sm-4 col-xs-12 col-lg-2">
+        <div class="lftmenu_mas">
+            <span class="col-xs-3 lftbox"><img src="~/Images/Players.svg" /></span>
+            <div class="col-xs-8 col-sm-10 subMenuMobi" id="MainMenu">
+                <div class="list-group panel">
+                    <a href="#" class="list-group-item list-group-item-success activeCls"ng-click="newPlayer()">Add Device</a>
+                    <a href="#" class="list-group-item list-group-item-success activeCls" ng-click="viewPlayers()">View</a>
+                    <a href="#" class="list-group-item list-group-item-success activeCls"ng-click="rmData()">
+                        Remove Device
+                        <div ng-show="chckBoxMsg" ng-cloak>
+                            <span ng-class={{"!chckBox?'':'halert'"}} class="alrtTxtWarning"> Select the Device !</span>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="list-group-item list-group-item-success activeCls" ng-click="reloadPage()">Reload </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Rightside Content Started *@
+    <div class="col-md-9 col-sm-8 col-xs-12 col-lg-10 rgtSide1" ng-cloak>
+        <h1>Devices <span class="sub_title" ng-cloak>{{subTitle}}</span></h1>
+        <p class="cont1">
+            Devices are HDMI IoT sticks that are plugged into devices like monitors, projectors or televisions, located at locations that content display on within a playlist.
+        </p>
+    </div>
+
+    @* Add Player Modal Window Started *@
+    <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 rgtSide2 upload" ng-show="aNPlayer" ng-cloak>
+        <div class="alert" ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="alertMsg">
+            <span ng-bind="msg"></span>
+        </div>
+        <form role="form" class="ng-pristine ng-valid" id="playerFormData">
+            <div class="form-group">
+                <fieldset>
+                    <label for="PlayerSerialNo">Device Serial No</label><span style="color:red;font-size:20px">&nbsp; *</span>
+                    <input class="form-control" type="text" maxlength="50"name="PlayerSerialNo" ng-model="Player.PlayerSerialNo" />
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <label for="PlayerName">Device Name</label>
+                    <input class="form-control" type="text" maxlength="50" ng-model="Player.Playername" id="PlayerName" name="PlayerName" />
+                </fieldset>
+            </div>
+            <div class="form-group flt_rgt">
+                <button type="submit" class="btn btn-submit1 " ng-click="addPlayer();active =! active;">Save</button>
+                <button type="button" class="btn btn-submit1 " ng-click="cancFun()">Cancel</button>
+            </div>
+        </form>
+        
+    </div>
+    @* Add Player Modal Window ended *@
+
+    @* Right side Code started *@
+    <div class="col-md-9 col-sm-8 col-xs-12 col-lg-10 rgtSide2" ng-show="playersTable" ng-init="getPlayersData()" ng-cloak>
+        @* playerTable code started here *@
+        <div class="rgttbl plyr1">
+            <div class="rgt_serach_align1">
+                <input class="form-control" ng-model="searchText" placeholder="Search Device Name" type="search" />
+                <span class="alert" ng-class="res == 'Success'?'alrtTxtSuccess':'failMsg'" id="Messag" ng-bind="editMsg"></span>
+                @*<span class="alert" ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" ng-bind="delMsg" id="alertMsg"></span>*@
+            </div>
+            @*<div class="alert" ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="Messag">
+                <span ng-bind="editMsg"></span>
+            </div>*@
+            
+            <div class="">
+                <table class="table mainTable dtbl">
+                    
+                    <tbody>
+                        <tr class="headerRow">
+                            <th style="width:5%; padding-left:10px !important; float:left;">S.No</th>
+                            <th style="width:10%; float:left;">Select</th>
+                            <th style="width:25%; float:left;"ng-click="sortBy('PlayerName')">
+                                Device Name
+                                <span class="sortorder" ng-show="propertyName === 'PlayerName'" ng-class="{reverse: reverse}"></span>
+                            </th>
+                            <th style="width:25%; float:left;"ng-click="sortBy('PlayerserialNo')">
+                                Serial No
+                                <span class="sortorder" ng-show="propertyName === 'PlayerserialNo'" ng-class="{reverse: reverse}"></span>
+                            </th>
+                            <th style="width:25%; float:left;" ng-click="sortBy('GroupName')">
+                                Group Name
+                                <span class="sortorder" ng-show="propertyName === 'GroupName'" ng-class="{reverse: reverse}"></span>
+                            </th>
+                            <th style="width:10%; float:left;">Edit</th>
+                        </tr>
+                    </tbody>
+                    </table>
+                <div class="tableDivBody">
+                    <table class=" table table-striped">
+                        
+                        <tbody class="tableBodySub">
+                            <tr class="odd tableBodyRowSub" ng-show="model.PlayerjoinGroupList.length == 0">
+                                <td valign="top" colspan="4" class="dataTables_empty">No data available in table</td>
+                            </tr>
+                            <tr class="tableBodyRowSub"ng-repeat="PlayerJoinGroup in model.PlayerjoinGroupList | filter : {PlayerName : searchText }  | orderBy:propertyName:reverse" ng-include="getTemplate(PlayerJoinGroup)">
+                                @*<tr ng-repeat="PlayerJoinGroup in model.PlayerjoinGroupList.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) | orderBy:propertyName:reverse" ng-include="getTemplate(PlayerJoinGroup)"></tr>*@
+                        </tbody>
+                    </table>
+                </div>
+                    @* Same code edited by prodipta *@
+                    
+                <script type="text/ng-template" id="display">
+                    <td style="width:5%; padding-left:10px !important; ">{{$index + 1}}</td>
+                    <td style="width:10%; "><input type="checkbox" id={{$index}} ng-click="vm.myClick($index, PlayerJoinGroup.PlayerId, PlayerJoinGroup.PlayerSerialNo, PlayerJoinGroup.PlayerName,PlayerJoinGroup.GroupId,GroupName )" /></td>
+                    <td style="width:25%; "class="username"><span class="playernameElip" title="{{PlayerJoinGroup.PlayerName}}">{{PlayerJoinGroup.PlayerName}}</span></td>
+                    <td style="width:25%; "><span class="playernameElip" title="{{PlayerJoinGroup.PlayerserialNo}}">{{PlayerJoinGroup.PlayerserialNo}}</span></td>
+                    <td style="width:25%; "><span class="playernameElip" title="{{PlayerJoinGroup.GroupName}}">{{PlayerJoinGroup.GroupName}}</span></td>
+                    <td style="width:10%; " ng-click="editplayer(PlayerJoinGroup)"><a class="edit_btn_align"><img src="../../Images/edit.png" /></a></td>
+                </script>
+                @* ENDED By PRODIPTA *@
+                <script type="text/ng-template" id="edit">
+                    <td>{{$index + 1}}</td>
+                    <td><input type="checkbox" id={{$index}} ng-click="vm.myClick(model.selected.PlayerId, $index, model.selected.PlayerName, model.selected.PlayerSerialNo)" /></td>
+                    <td><input type="text" maxlength="50" ng-model="model.selected.PlayerName" /></td>
+                    <td><input type="text" maxlength="50" ng-model="model.selected.PlayerserialNo" /></td>
+                    <td>{{PlayerJoinGroup.GroupName}}</td>
+                    <td>
+                        <a class="save_btn_align" ng-click="saveplayer($index,model.selected.PlayerId,model.selected.PlayerName, model.selected.PlayerserialNo,PlayerJoinGroup.GroupId)"><img src="../../Images/save_icon.png" /></a>
+                        <a class="cancel_btn_align" ng-click="reset()"><img src="../../Images/cancel_icon.png" /></a>
+                    </td>
+                </script>
+                @* Pagination ended *@
+            </div>
+        </div>
+        
+        @* playerTable code ended here *@
+    </div> 
+    
+    @* Right side code ended *@
+
+</div>

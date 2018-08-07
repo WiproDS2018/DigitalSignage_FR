@@ -1,0 +1,10 @@
+id: SchedulerUpdate
+language: CSharp
+name:
+  Default: SchedulerUpdate
+qualifiedName:
+  Default: SchedulerUpdate
+type: Assembly
+modifiers: {}
+items: []
+references: {}

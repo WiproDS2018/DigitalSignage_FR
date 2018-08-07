@@ -1,0 +1,506 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "apiVersions": {
+            "type": "object"
+        },
+        "webSiteSettings": {
+            "type": "object"
+        },
+        "tag": {
+            "type": "object",
+            "defaultValue": {
+                "key1": "key",
+                "value1": "value"
+            },
+            "metadata": {
+                "description": "Tag Values"
+            }
+        },
+        "storageSettings": {
+            "type": "object"
+        },
+        "storageAccountKey": {
+            "type": "string"
+        },
+        "iotHubSettings": {
+            "type": "object"
+        },
+        "iotHubPrimaryKey": {
+            "type": "string"
+        },
+        "iotDpsSettings": {
+            "type": "object"
+        },
+        "iotHubEndPoint": {
+            "type": "string"
+        },
+        "iotDpsPrimaryKey": {
+            "type": "string"
+        },
+        "costingModel": {
+            "type": "string"
+        },
+        "costingOne": {
+            "type": "object"
+        },
+        "costingTwo": {
+            "type": "object"
+        },
+        "costingThree": {
+            "type": "object"
+        },
+        "costingFour": {
+            "type": "object"
+        },
+        "automationSettings": {
+            "type": "object"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "apiVersion": "[parameters('apiVersions').webApiVersion]",
+            "name": "[parameters('webSiteSettings').hostingPlanName]",
+            "type": "Microsoft.Web/serverfarms",
+            "location": "[parameters('webSiteSettings').location]",
+            "dependsOn": [],
+            "sku": {
+                "name": "[parameters(concat('costing',parameters('costingModel'))).skuName]",
+                "capacity": "[parameters('webSiteSettings').skuCapacity]"
+            },
+            "properties": {
+                "name": "[parameters('webSiteSettings').hostingPlanName]"
+            }
+        },
+        {
+            "apiVersion": "[parameters('apiVersions').webApiVersion]",
+            "name": "[parameters('webSiteSettings').campaignServerName]",
+            "type": "Microsoft.Web/sites",
+            "location": "[parameters('webSiteSettings').location]",
+            "dependsOn": [
+                "[parameters('webSiteSettings').hostingPlanName]"
+            ],
+            "tags": {
+                "[concat('hidden-related:', resourceId('Microsoft.Web/serverfarms', parameters('webSiteSettings').hostingPlanName))]": "empty",
+                "displayName": "Website"
+            },
+            "properties": {
+                "name": "[parameters('webSiteSettings').campaignServerName]",
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('webSiteSettings').hostingPlanName)]"
+            },
+            "resources": [
+                {
+                    "apiVersion": "[parameters('apiVersions').webApiVersion1]",
+                    "name": "web",
+                    "type": "config",
+                    "dependsOn": [
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').campaignServerName)]",
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').campaignServerName, '/extensions/MSDeploy')]"
+                    ],
+                    "tags": {
+                        "displayName": "ContentManagerAppConfig"
+                    },
+                    "properties": {
+                        "phpVersion": "5.6",
+                        "netFrameworkVersion": "v4.6",
+                        "use32BitWorkerProcess": false,
+                        "webSocketsEnabled": true,
+                        "alwaysOn": true,
+                        "remoteDebuggingEnabled": true,
+                        "remoteDebuggingVersion": "VS2015"
+                    }
+                },
+                {
+                    "name": "MSDeploy",
+                    "type": "extensions",
+                    "location": "[parameters('webSiteSettings').location]",
+                    "apiVersion": "[parameters('apiVersions').webApiVersion1]",
+                    "dependsOn": [
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').campaignServerName)]"
+                    ],
+                    "tags": {
+                        "displayName": "ContentManagerAppMSDeploy"
+                    },
+                    "properties": {
+                        "packageUri": "[parameters('webSiteSettings').campaignJobUrl]"
+                    }
+                },
+                {
+                    "name": "connectionstrings",
+                    "type": "config",
+                    "apiVersion": "[parameters('apiVersions').webApiVersion1]",
+                    "dependsOn": [
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').campaignServerName)]",
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').campaignServerName, '/extensions/MSDeploy')]"
+                    ],
+                    "tags": {
+                        "displayName": "ContentManagerConnectionStrings"
+                    },
+                    "properties": {
+                        "connection": {
+                            "value": "[parameters('webSiteSettings').connectionString1]",
+                            "type": "SQLAzure"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "apiVersion": "[parameters('apiVersions').webApiVersion]",
+            "name": "[parameters('webSiteSettings').webSiteName]",
+            "type": "Microsoft.Web/sites",
+            "location": "[parameters('webSiteSettings').location]",
+            "dependsOn": [
+                "[parameters('webSiteSettings').hostingPlanName]"
+            ],
+            "tags": {
+                "[concat('hidden-related:', resourceId('Microsoft.Web/serverfarms', parameters('webSiteSettings').hostingPlanName))]": "empty",
+                "displayName": "Website"
+            },
+            "properties": {
+                "name": "[parameters('webSiteSettings').webSiteName]",
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('webSiteSettings').hostingPlanName)]"
+            },
+            "resources": [
+                {
+                    "apiVersion": "[parameters('apiVersions').webApiVersion1]",
+                    "name": "web",
+                    "type": "config",
+                    "dependsOn": [
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').webSiteName)]",
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').webSiteName, '/extensions/MSDeploy')]"
+                    ],
+                    "tags": {
+                        "displayName": "ContentManagerAppConfig"
+                    },
+                    "properties": {
+                        "phpVersion": "5.6",
+                        "netFrameworkVersion": "v4.6",
+                        "use32BitWorkerProcess": false,
+                        "webSocketsEnabled": true,
+                        "alwaysOn": true,
+                        "remoteDebuggingEnabled": true,
+                        "remoteDebuggingVersion": "VS2015"
+                    }
+                },
+                {
+                    "name": "MSDeploy",
+                    "type": "extensions",
+                    "location": "[parameters('webSiteSettings').location]",
+                    "apiVersion": "[parameters('apiVersions').webApiVersion1]",
+                    "dependsOn": [
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').webSiteName)]"
+                    ],
+                    "tags": {
+                        "displayName": "ContentManagerAppMSDeploy"
+                    },
+                    "properties": {
+                        "packageUri": "[parameters('webSiteSettings').webAppOutMonitorUrl]"
+                    }
+                },
+                {
+                    "name": "connectionstrings",
+                    "type": "config",
+                    "apiVersion": "[parameters('apiVersions').webApiVersion1]",
+                    "dependsOn": [
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').webSiteName)]",
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').webSiteName, '/extensions/MSDeploy')]"
+                    ],
+                    "tags": {
+                        "displayName": "ContentManagerConnectionStrings"
+                    },
+                    "properties": {
+                        "SignageDBContext": {
+                            "value": "[parameters('webSiteSettings').signageDbContext1]",
+                            "type": "Custom"
+                        }
+                    }
+                },
+                {
+                    "name": "appsettings",
+                    "type": "config",
+                    "apiVersion": "[parameters('apiVersions').webApiVersion1]",
+                    "dependsOn": [
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').webSiteName)]",
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').webSiteName, '/extensions/MSDeploy')]"
+                    ],
+                    "tags": {
+                        "displayName": "websiteAppSettings"
+                    },
+                    "properties": {
+                        "webpages:Version": "2.0.0.0",
+                        "webpages:Enabled": "false",
+                        "PreserveLoginUrl": "true",
+                        "ClientValidationEnabled": "true",
+                        "UnobtrusiveJavaScriptEnabled": "true",
+                        "StroageConnection": "[concat('DefaultEndpointsProtocol=https;AccountName=',parameters('storageSettings').storageAccountName,';AccountKey=',parameters('storageAccountKey'))]",
+                        "Signageimagecontainer": "[parameters('automationSettings').destContainer1]",
+                        "Signagehtmlcontainer": "[parameters('automationSettings').destContainer2]",
+                        "Signagetemplatecontainer": "[parameters('automationSettings').destContainer3]",
+                        "ida:ClientId": "[parameters('webSiteSettings').idaClientId]",
+                        "ida:Tenant": "[parameters('webSiteSettings').idaTenant]",
+                        "ida:AADInstance": "https://login.microsoftonline.com/{0}",
+                        "ida:PostLogoutRedirectUri": "[concat('https://',parameters('webSiteSettings').webSiteName,'.azurewebsites.net')]"
+                    }
+                }
+            ]
+        },
+        {
+            "apiVersion": "[parameters('apiVersions').webApiVersion]",
+            "name": "[parameters('webSiteSettings').nodeServerName]",
+            "type": "Microsoft.Web/sites",
+            "location": "[parameters('webSiteSettings').location]",
+            "dependsOn": [
+                "[parameters('webSiteSettings').hostingPlanName]"
+            ],
+            "tags": {
+                "[concat('hidden-related:', resourceId('Microsoft.Web/serverfarms', parameters('webSiteSettings').hostingPlanName))]": "empty",
+                "displayName": "Website"
+            },
+            "properties": {
+                "name": "[parameters('webSiteSettings').nodeServerName]",
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('webSiteSettings').hostingPlanName)]"
+            },
+            "resources": [
+                {
+                    "apiVersion": "2016-03-01",
+                    "name": "web",
+                    "type": "sourcecontrols",
+                    "dependsOn": [
+                        "[resourceId('Microsoft.Web/Sites', parameters('webSiteSettings').nodeServerName)]"
+                    ],
+                    "properties": {
+                        "RepoUrl": "https://github.com/azure-appservice-samples/NodeJS-ExpressSiteTemplate",
+                        "branch": "master",
+                        "IsManualIntegration": true
+                    }
+                },
+                {
+                    "apiVersion": "[parameters('apiVersions').webApiVersion1]",
+                    "name": "web",
+                    "type": "config",
+                    "dependsOn": [
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').nodeServerName)]",
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').nodeServerName, '/sourcecontrols/web')]",
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').nodeServerName, '/extensions/MSDeploy')]"
+                    ],
+                    "tags": {
+                        "displayName": "WebjobConfig"
+                    },
+                    "properties": {
+                        "phpVersion": "5.6",
+                        "netFrameworkVersion": "v4.5.2",
+                        "use32BitWorkerProcess": false,
+                        "webSocketsEnabled": true,
+                        "alwaysOn": true,
+                        "remoteDebuggingEnabled": true,
+                        "remoteDebuggingVersion": "VS2015"
+                    }
+                },
+                {
+                    "name": "MSDeploy",
+                    "type": "extensions",
+                    "location": "[parameters('webSiteSettings').location]",
+                    "apiVersion": "[parameters('apiVersions').webApiVersion1]",
+                    "dependsOn": [
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').nodeServerName)]",
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').nodeServerName, '/sourcecontrols/web')]"
+                    ],
+                    "tags": {
+                        "displayName": "nodeSeverAppMSDeploy"
+                    },
+                    "properties": {
+                        "packageUri": "[parameters('webSiteSettings').nodeServerPackageURI]"
+                    }
+                },
+                {
+                    "name": "appsettings",
+                    "type": "config",
+                    "apiVersion": "[parameters('apiVersions').webApiVersion1]",
+                    "dependsOn": [
+                        "[resourceId('Microsoft.Web/sites', parameters('webSiteSettings').nodeServerName)]",
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').nodeServerName, '/sourcecontrols/web')]",
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').nodeServerName, '/extensions/MSDeploy')]"
+                    ],
+                    "tags": {
+                        "displayName": "nodeServerAppSettings"
+                    },
+                    "properties": {
+                        "iotHubUri": "[parameters('iotHubEndPoint')]",
+                        "dpsConnection": "[concat('HostName=',parameters('iotDpsSettings').iotDpsName,'.azure-devices-provisioning.net;SharedAccessKeyName=provisioningserviceowner;SharedAccessKey=',parameters('iotDpsPrimaryKey'))]",
+                        "iotHubConnection": "[concat('HostName=',parameters('iotHubEndPoint'),';SharedAccessKeyName=iothubowner;SharedAccessKey=',parameters('iotHubPrimaryKey'))]"
+                    }
+                }
+            ]
+        },
+        {
+            "apiVersion": "[parameters('apiVersions').webApiVersion]",
+            "name": "[parameters('webSiteSettings').signageServerName]",
+            "type": "Microsoft.Web/sites",
+            "location": "[parameters('webSiteSettings').location]",
+            "dependsOn": [
+                "[parameters('webSiteSettings').hostingPlanName]"
+            ],
+            "tags": {
+                "[concat('hidden-related:', resourceId('Microsoft.Web/serverfarms', parameters('webSiteSettings').hostingPlanName))]": "empty",
+                "displayName": "Website"
+            },
+            "properties": {
+                "name": "[parameters('webSiteSettings').signageServerName]",
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('webSiteSettings').hostingPlanName)]"
+            },
+            "resources": [
+                {
+                    "apiVersion": "[parameters('apiVersions').webApiVersion1]",
+                    "name": "web",
+                    "type": "config",
+                    "dependsOn": [
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').signageServerName)]",
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').signageServerName, '/extensions/MSDeploy')]"
+                    ],
+                    "tags": {
+                        "displayName": "WebjobConfig"
+                    },
+                    "properties": {
+                        "phpVersion": "5.6",
+                        "netFrameworkVersion": "v4.5.2",
+                        "use32BitWorkerProcess": false,
+                        "webSocketsEnabled": true,
+                        "alwaysOn": true,
+                        "remoteDebuggingEnabled": true,
+                        "remoteDebuggingVersion": "VS2015"
+                    }
+                },
+                {
+                    "name": "MSDeploy",
+                    "type": "extensions",
+                    "location": "[parameters('webSiteSettings').location]",
+                    "apiVersion": "[parameters('apiVersions').webApiVersion1]",
+                    "dependsOn": [
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').signageServerName)]"
+                    ],
+                    "tags": {
+                        "displayName": "signageServerAppMSDeploy"
+                    },
+                    "properties": {
+                        "packageUri": "[parameters('webSiteSettings').signageOutMonitorUrl]"
+                    }
+                },
+                {
+                    "name": "connectionstrings",
+                    "type": "config",
+                    "apiVersion": "[parameters('apiVersions').webApiVersion1]",
+                    "dependsOn": [
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').signageServerName)]",
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').signageServerName, '/extensions/MSDeploy')]"
+                    ],
+                    "tags": {
+                        "displayName": "signageServerConnectionStrings"
+                    },
+                    "properties": {
+                        "SchedulerConsole.Properties.Settings.SchedulerConnectionString": {
+                            "value": "[parameters('webSiteSettings').connectionString1]",
+                            "type": "SQLAzure"
+                        },
+                        "hubconnection": {
+                            "value": "[concat('HostName=',parameters('iotHubSettings').iotHubName,'.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=',parameters('iotHubPrimaryKey'))]",
+                            "type": "Custom"
+                        }
+                    }
+                },
+                {
+                    "name": "appsettings",
+                    "type": "config",
+                    "apiVersion": "[parameters('apiVersions').webApiVersion1]",
+                    "dependsOn": [
+                        "[resourceId('Microsoft.Web/sites', parameters('webSiteSettings').signageServerName)]",
+                        "[concat('Microsoft.Web/sites/', parameters('webSiteSettings').signageServerName, '/extensions/MSDeploy')]"
+                    ],
+                    "tags": {
+                        "displayName": "signageServerAppSettings"
+                    },
+                    "properties": {
+                        "selectall": "SELECT * FROM [DeviceContentTracker] where (published =1 and [Status]='NotStarted') OR (published =0 and [Status]='NotStarted') ",
+                        "UpdateStatus1": "UPDATE DeviceContentTracker SET Status=@NewS WHERE TrackerId = @Sid"
+                    }
+                }
+            ]
+        },
+        {
+            "apiVersion": "[parameters('apiVersions').webApiVersion2]",
+            "type": "Microsoft.Scheduler/jobCollections",
+            "dependsOn": [
+                "[resourceId('Microsoft.Web/Sites',  parameters('webSiteSettings').signageServerName)]"
+            ],
+            "location": "[parameters('webSiteSettings').location]",
+            "name": "[parameters('webSiteSettings').jobCollectionName]",
+            "properties": {
+                "sku": {
+                    "name": "Standard"
+                },
+                "quota": {
+                    "maxJobCount": "10",
+                    "maxRecurrence": {
+                        "Frequency": "minute",
+                        "interval": "1"
+                    }
+                }
+            },
+            "resources": [
+                {
+                    "apiVersion": "[parameters('apiVersions').webApiVersion2]",
+                    "name": "schedulerJob",
+                    "type": "jobs",
+                    "dependsOn": [
+                        "[resourceId('Microsoft.Scheduler/jobCollections',  parameters('webSiteSettings').jobCollectionName)]"
+                    ],
+                    "properties": {
+                        "startTime": "2015-02-10T00:08:00Z",
+                        "action": {
+                            "request": {
+                                "uri": "[concat(list(resourceId('Microsoft.Web/sites/config', parameters('webSiteSettings').signageServerName, 'publishingcredentials'), '2014-06-01').properties.scmUri, '')]",
+                                "method": "GET"
+                            },
+                            "type": "HTTP",
+                            "retryPolicy": {
+                                "retryType": "Fixed",
+                                "retryInterval": "PT1M",
+                                "retryCount": 2
+                            }
+                        },
+                        "state": "Enabled"
+                    }
+                },
+                {
+                    "apiVersion": "[parameters('apiVersions').webApiVersion2]",
+                    "name": "campainexpireJob",
+                    "type": "jobs",
+                    "dependsOn": [
+                        "[resourceId('Microsoft.Scheduler/jobCollections',  parameters('webSiteSettings').jobCollectionName)]"
+                    ],
+                    "properties": {
+                        "startTime": "2015-02-10T00:08:00Z",
+                        "action": {
+                            "request": {
+                                "uri": "[concat(list(resourceId('Microsoft.Web/sites/config', parameters('webSiteSettings').campaignServerName, 'publishingcredentials'), '2014-06-01').properties.scmUri, '/App_Data/jobs/Triggered/webjob')]",
+                                "method": "GET"
+                            },
+                            "type": "HTTP",
+                            "retryPolicy": {
+                                "retryType": "None"
+                            }
+                        },
+                        "state": "Enabled",
+                        "recurrence": {
+                            "interval": 1,
+                            "frequency": "day"   
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "outputs": {}
+}

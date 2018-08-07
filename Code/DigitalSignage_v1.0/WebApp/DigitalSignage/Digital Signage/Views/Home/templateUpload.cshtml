@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "templateUpload";
+}
+
+<h2>templateUpload</h2>
+
+<div ng-app="MyApp" ng-controller="upload">
+    <div class="container newside">
+        <div class="col-md-6">
+            <input type="file" fileinput="file" filepreview="filepreview" />
+        </div>
+        <div class="col-md-2">
+            <img ng-src="{{filepreview}}" class="img-responsive" ng-show="filepreview" />
+        </div>
+        </div>
+        @*<div class="container newside">
+                <div class="row">
+                    <label for="fileToUpload">Select a File to Upload</label><br />
+                    <input type="file" ng-model-instant id="fileToUpload" multiple onchange="angular.element(document.getElementById('fileToUpload')).scope().setFiles(document.getElementById('fileToUpload'))" />
+                </div>
+
+                <div ng-show="files.length">
+                    <div ng-repeat="file in files.slice(0)">
+                        <span>{{file.webkitRelativePath || file.name}}</span>
+                        (<span ng-switch="file.size > 1024*1024">
+                            <span ng-switch-when="true">{{file.size / 1024 / 1024 | number:2}} MB</span>
+                            <span ng-switch-default>{{file.size / 1024 | number:2}} kB</span>
+                        </span>)
+                    </div>
+                    <input type="button" ng-click="uploadFile()" value="Upload" />
+                    <div ng-show="progressVisible">
+                        <div class="percent">{{progress}}%</div>
+                        <div class="progress-bar">
+                            <div class="uploaded" ng-style="{'width': progress+'%'}"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+    </div>
+@section scripts
+{
+<script src="~/Scripts/AngularControllers/upload.js"></script>
+}

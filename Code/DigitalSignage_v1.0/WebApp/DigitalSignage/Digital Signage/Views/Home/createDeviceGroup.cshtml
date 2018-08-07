@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "createDeviceGroup";
+}
+<div class="container-fluid ms_root" ng-controller="StationController">
+    <div class="clearfix"></div>
+
+    @* Left Side Content *@
+    <div class="col-md-3 col-sm-4 col-xs-12 col-lg-2 zindx">
+        <div class="lftmenu_mas">
+            <span class="col-xs-3 lftbox"><img src="~/Images/Stations.svg" /></span>
+            <div class="col-xs-8 col-sm-10 subMenuMobi" id="MainMenu">
+                <div class="list-group panel">
+
+                    <a href="#submenuItemParent" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Parent-group  &raquo;</a>
+                    <div class="collapse formobi" id="submenuItemParent">
+                        <a href="" class="list-group-item" ng-click="aNewStation()">Add Location  &raquo;</a>
+                        <a href="" class="list-group-item" ng-click="assignPlayer()">
+                            Attach Devices/Device Group  &raquo;
+                            <div ng-show="chckBoxMsgassign" ng-cloak>
+                                <span ng-class={{"!chckBox1?'':'halert1'"}} class="alrtTxtWarning"> {{assignMsg}}</span>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-success" ng-click="rmData()">
+                            Remove Location  &raquo;
+                            <div ng-show="chckBoxMsg" ng-cloak>
+                                <span ng-class={{"chckBox?'halert':''"}} class="alrtTxtWarning"> Select the Location !</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <a href="#submenuItemSub" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Sub-group  &raquo;</a>
+
+                    <div class="collapse formobi" id="submenuItemSub">
+                        <a href="#" class="list-group-item list-group-item-success" ng-click="newGroup()">Create Device Group</a>
+                        <a href="#" class="list-group-item list-group-item-success" ng-click="getAllPlayerGroup()">View Device Group</a>
+                        <a href="#" class="list-group-item list-group-item-success" ng-click="assignPlayer()">
+                            Assign Devices
+                            <div ng-show="chckBoxforAssignPlayer" ng-cloak>
+                                <span ng-class={{"!chckBox?'':'halert'"}} class="alrtTxtWarning">{{assignMsg}}</span>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-success" ng-click="rmGroupData()">
+                            Remove Group
+                            <div ng-show="chckBoxMsgForGrp" ng-cloak>
+                                <span ng-class={{"!chckBox?'':'halert'"}} class="alrtTxtWarning"> Select the Group to Delete !</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" class="list-group-item list-group-item-success" ng-click="reloadPage()">Reload  &raquo;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @* Rightside Content Started *@
+    <div class="col-md-9 col-sm-8 col-xs-12 col-lg-10 rgtSide1 zindx" ng-controller="StationController" ng-cloak>
+        <h1>Locations <span class="sub_title" ng-cloak>{{subTitle}}</span></h1>
+        <p class="cont1">
+            A Location is like a hotel or restaurant with one or more devices that scenes dsiplay on within a playlist.
+        </p>
+    </div>
+    @*Creating New plAYER group by prodipta  *@
+    <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 rgtSide2 upload" ng-show="aNGroup" ng-controller="createNewPlayerGroupController" ng-init="newGroup()" ng-cloak>
+        <form role="form" class="ng-pristine ng-valid" id="playerFormData">
+            <div class="form-group">
+                <fieldset>
+                    <label for="GroupName">Group Name</label>
+                    <input class="form-control" type="text" ng-model="Group.groupName" id="GroupName" name="GroupName" />
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <label for="GroupDescription">Group Description</label>
+                    <input class="form-control" type="text" ng-model="Group.groupDescription" id="GroupDescription" name="GroupDescription" />
+                </fieldset>
+            </div>
+            <div class="form-group flt_rgt">
+                <button type="submit" class="btn btn-submit1 " ng-click="addGroup();">Save</button>
+                <button type="button" class="btn btn-submit1 " ng-click="cancFun()">Cancel</button>
+            </div>
+        </form>
+        <div class="alert" ng-class="res.data == 'Success'?'alrtTxtSuccess':'failMsg'" id="success">
+            <span>{{msg}}</span>
+        </div>
+    </div>
+    @* ended by prodipta *@
+</div>

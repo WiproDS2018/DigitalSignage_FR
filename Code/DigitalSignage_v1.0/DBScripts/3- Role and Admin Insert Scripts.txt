@@ -1,0 +1,15 @@
+USE [SysgainSignageDB]
+GO
+
+INSERT INTO [dbo].[Role]([RoleName])VALUES ('User')
+INSERT INTO [dbo].[Role]([RoleName]) VALUES ('Store Manager')
+INSERT INTO [dbo].[Role]([RoleName])VALUES ('Regional Manager')
+INSERT INTO [dbo].[Role]([RoleName]) VALUES ('Country Manager')
+INSERT INTO [dbo].[Role]([RoleName]) VALUES ('Admin')
+GO
+
+INSERT INTO [dbo].[User]([UserName],[Password],[ConfirmPassword],[Email],[IsActive],[Role],[AccountID])
+     VALUES ('Admin','Admin','Admin','Admin@signage.com',1,'Admin',1)
+           
+GO
+

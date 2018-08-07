@@ -1,0 +1,10 @@
+id: ExpireScheduler
+language: CSharp
+name:
+  Default: ExpireScheduler
+qualifiedName:
+  Default: ExpireScheduler
+type: Assembly
+modifiers: {}
+items: []
+references: {}

@@ -1,0 +1,72 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "solutionType": {
+            "value": "solution with monitoring"
+        },
+        "costingModel": {
+            "value": "Two"
+        },
+        "sqlAdministratorLogin": {
+            "value": "GEN-UNIQUE"
+        },
+        "sqlAdministratorLoginPassword": {
+            "value": "GEN-UNIQUE"
+        },
+        "idaTenant": {
+            "value": "GEN-UNIQUE"
+        },
+        "idaClientId": {
+            "value": "GEN-UNIQUE"
+        },
+        "contentManagerAppName": {
+            "value": "GEN-UNIQUE"
+        },
+        "recoveryIdaClientId": {
+            "value": "GEN-UNIQUE"
+        },
+        "recoveryContentManagerAppName": {
+            "value": "GEN-UNIQUE"
+        },
+        "sessionId": {
+            "value": "GEN-UNIQUE"
+        },
+        "storageBlobUrl": {
+            "value": "https://projectiot.blob.core.windows.net/rms-iot/"
+        },
+        "locationDr": {
+            "value": "GEN-UNIQUE"
+        },
+        "omsWorkspaceRegion": {
+            "value": "eastus"
+        },
+        "omsAutomationRegion": {
+            "value": "eastus2"
+        },
+        "dataRetention": {
+            "value": 7
+        },
+        "appInsightsLocation": {
+            "value": "southcentralus"
+        },
+        "capacityUnits": {
+            "value": 1
+        },
+        "iotDpsRegion": {
+            "value": "eastus"
+        },
+        "d2cMessageRetentionInDaysPeriod": {
+            "value": 1
+        },
+        "d2cPartitionCount": {
+            "value": 2
+        },
+        "skuCapacity": {
+            "value": 1
+        },
+        "trafficRoutingMethod": {
+            "value": "Priority"
+        }
+    }
+}
