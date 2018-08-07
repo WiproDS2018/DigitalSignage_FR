@@ -1,1 +1,0 @@
-D:\Windows10493\IoTCoreDefaultApp\CS\IoTCoreDefaultApp\AppPackages\IoTCoreDefaultApp_1.0.3.0_x64_Debug_Test\IoTCoreDefaultApp_1.0.3.0_x64_Debug.appx

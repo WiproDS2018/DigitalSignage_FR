@@ -1,1 +1,0 @@
-D:\Windows-iotcore-samples\Samples\IoTCoreDefaultApp\CS\IoTCoreDefaultApp\IoTCoreDefaultApp.csproj;arm

@@ -1,3 +1,0 @@
-D:\SignageServer\SignageServerAzure\obj\Release\SignageServerAzure.njsprojResolveAssemblyReference.cache
-D:\SignageServer\SignageServerAzure\obj\Release\SignageServerAzure.njsproj.CoreCompileInputs.cache
-D:\SignageServer\SignageServerAzure\bin\Microsoft.NodejsTools.WebRole.dll

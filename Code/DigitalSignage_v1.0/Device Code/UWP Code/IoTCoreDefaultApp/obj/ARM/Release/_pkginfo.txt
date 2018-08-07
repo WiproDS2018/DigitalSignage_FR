@@ -1,1 +1,0 @@
-D:\Windows10493\IoTCoreDefaultApp\CS\IoTCoreDefaultApp\AppPackages\IoTCoreDefaultApp_1.0.28.0_ARM_Test\IoTCoreDefaultApp_1.0.28.0_ARM.appx
